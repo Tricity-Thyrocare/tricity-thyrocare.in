@@ -1,11 +1,13 @@
-TRICITY THYROCARE COLLECTION CENTRE WEBSITE
-Files:
-- index.html = main website
-- style.css = design
-- script.js = booking, menu, package popup and test search
+TRICITY THYROCARE PREMIUM DEMO
+Open index.html in Chrome.
 
-Cloudflare:
-Upload this ZIP directly to the Cloudflare Pages/Workers static site upload screen.
-The booking form opens WhatsApp to 8178009011.
+Included:
+- Premium blue/white responsive layout
+- Festive Jaanch campaign visual from the supplied booklet
+- Opening campaign popup with Skip
+- Featured packages based on the supplied booklet pages
+- Test shortcuts
+- Home collection booking form
+- WhatsApp booking to 8178009011
 
-Replace package placeholder blocks with your actual package photos later if desired.
+Note: Package names/prices are transcribed from the supplied booklet and should be checked before publishing.
