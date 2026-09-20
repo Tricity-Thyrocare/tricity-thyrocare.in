@@ -1,7 +1,44 @@
-function toggleMenu(){document.getElementById("nav").classList.toggle("open")}
-function openPackage(title,price){document.getElementById("modalTitle").textContent=title;document.getElementById("modalPrice").textContent=price;document.getElementById("modal").classList.add("show");document.getElementById("package").value=title}
-function closeModal(e){if(!e||e.target.id==="modal"||e.target.className==="close")document.getElementById("modal").classList.remove("show")}
-function selectTest(t){document.getElementById("package").value="Other Test";document.getElementById("booking").scrollIntoView();alert("Please mention this test in the address/details field or WhatsApp message: "+t)}
-function filterTests(){let q=document.getElementById("testSearch").value.toLowerCase();document.querySelectorAll(".test").forEach(x=>x.style.display=x.textContent.toLowerCase().includes(q)?"flex":"none")}
-function submitBooking(e){e.preventDefault();let n=document.getElementById("name")?.value||document.getElementById("quickName").value;let p=document.getElementById("phone")?.value||document.getElementById("quickPhone").value;let pkg=document.getElementById("package")?.value||document.getElementById("quickPackage").value;let d=document.getElementById("date")?.value||"Not selected";let t=document.getElementById("time")?.value||"Not selected";let a=document.getElementById("address")?.value||"Not provided";let msg=`Hello Tricity Thyrocare Collection Centre,%0A%0AName: ${encodeURIComponent(n)}%0AMobile: ${encodeURIComponent(p)}%0ATest/Package: ${encodeURIComponent(pkg)}%0ADate: ${encodeURIComponent(d)}%0ATime: ${encodeURIComponent(t)}%0AAddress: ${encodeURIComponent(a)}`;window.open("https://wa.me/918178009011?text="+msg,"_blank")}
-document.getElementById("date").min=new Date().toISOString().split("T")[0];
+const packages=[
+["Jaanch Cancer Screening Breast And Ovarian",3,1385,"Cancer Screening"],
+["Jaanch Cancer Screening Female Basic",6,2140,"Cancer Screening"],
+["Jaanch Cancer Screening Female Advanced",37,4275,"Cancer Screening"],
+["Jaanch Cancer Screening Male Basic",3,1385,"Cancer Screening"],
+["Jaanch Cancer Screening Male Advanced",35,2140,"Cancer Screening"],
+
+["Jaanch - Mens Hairfall Screening Advanced",47,3495,"Hair Fall"],
+["Jaanch - Womens Hairfall Screening Advanced",51,3530,"Hair Fall"],
+
+["Jaanch Thyroid Profile - Basic",5,585,"Thyroid"],
+["Jaanch Thyroid Profile - Basic Plus",5,1200,"Thyroid"],
+["Jaanch Thyroid Profile - Advanced",8,2995,"Thyroid"],
+
+["Jaanch Female Hormone Screening",7,1499,"Hormone Check"],
+["Jaanch Male Hormone Screening",6,3599,"Hormone Check"],
+
+["Jaanch Antenatal Profile - Basic",35,1760,"Women's Health"],
+["Jaanch Antenatal Profile - Advanced",51,3290,"Women's Health"],
+["Jaanch Post Delivery Health Check",56,2599,"Women's Health"],
+["Jaanch Anemia Profile Basic",58,2560,"Women's Health"],
+["Jaanch Anemia Profile Advanced",70,4595,"Women's Health"],
+["Jaanch Menopause Assessment Panel",20,3565,"Women's Health"],
+
+["Jaanch – PCOD (Mini)",50,2350,"Women's Health"],
+["Jaanch – PCOD Basic",69,5880,"Women's Health"],
+["Jaanch – PCOD Advanced",73,6740,"Women's Health"],
+
+["Jaanch STD Profile Basic",12,2940,"STDs"],
+["Jaanch STD Profile Advanced",12,7645,"STDs"],
+["Jaanch STD Profile Extended",14,12350,"STDs"],
+
+["Jaanch Healthy Mind Package",37,1799,"Healthy Mind"],
+["Jaanch Bone And Muscle Health",41,2135,"Bone & Muscle"],
+
+["Jaanch Smoking Impact Package",70,2499,"Respiratory"],
+
+["Jaanch Autoimmune Screening Package",34,1799,"Autoimmunity"],
+["Jaanch Autoimmune Advanced Package",38,3499,"Autoimmunity"],
+["Jaanch Rheumatoid Arthritis Package",38,2099,"Autoimmunity"],
+["Jaanch SLE Panel",5,4990,"Autoimmunity"],
+["Jaanch Autoimmune Thyroid Screening Panel",6,2645,"Autoimmunity"],
+["Jaanch Celiac Disease Screening Panel",35,3925,"Autoimmunity"]
+];
