@@ -4,154 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tricity Thyrocare Collection Centre</title>
-<meta name="description" content="Tricity Thyrocare Collection Centre — PAN INDIA SERVICE AVAILABLE, home collection, tests and health packages.">
-<link rel="stylesheet" href="style.css">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#12345b;background:#fff}
+.top{background:#073c74;color:#fff;padding:9px 4%;display:flex;justify-content:space-around;gap:15px;flex-wrap:wrap;font-size:13px}
+.header{display:flex;align-items:center;gap:22px;padding:12px 3%;background:#fff;border-bottom:1px solid #e5edf4}.logo{font-size:27px;font-weight:900;color:#0753a0;line-height:.9}.logo span{color:#ed2341}.logo small{display:block;font-size:10px;color:#31506e;margin-top:7px}.search{flex:1;max-width:510px;padding:13px 18px;border:1px solid #d7e1eb;border-radius:7px;color:#8190a0}.headbtn,.red{background:#ed2341;color:#fff;border:0;border-radius:7px;padding:13px 24px;font-weight:700;cursor:pointer}.nav{display:flex;gap:28px;padding:11px 3%;border-bottom:1px solid #e5edf4;overflow:auto;white-space:nowrap;font-size:14px}.nav b{color:#ed2341;border-bottom:3px solid #ed2341;padding-bottom:10px}
+.hero{min-height:330px;padding:32px 5%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(110deg,#e8f7ff,#fff0f4,#fff8df);overflow:hidden}.hero h1{font-size:51px;line-height:1.02;margin:0;color:#0753a0}.hero h1 span{color:#ed2341}.hero p{font-size:17px;line-height:1.5}.pill{display:inline-block;background:#fff;border-radius:30px;padding:9px 13px;margin:4px;box-shadow:0 3px 12px #cbd8e4}.hero-art{text-align:center;font-size:90px;min-width:300px}.wrap{padding:0 3%}.title{display:flex;justify-content:space-between;align-items:end;margin:25px 0 12px}.title h2{margin:0;font-size:27px}.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.card{border:1px solid #dce6ee;border-radius:10px;padding:13px;background:#fff;box-shadow:0 2px 10px #dce6ee33}.icon{font-size:28px}.card h3{font-size:14px;min-height:38px}.card p{font-size:12px;color:#71849a}.price{font-size:18px;font-weight:800;color:#0753a0}.old{text-decoration:line-through;color:#999;font-size:12px}.card button{width:100%;margin-top:10px;padding:9px;background:#fff;border:1px solid #0870c8;color:#0753a0;border-radius:6px;font-weight:700;cursor:pointer}.banners{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:25px 0}.banner{min-height:160px;padding:24px;border-radius:12px;background:linear-gradient(135deg,#e4f6ff,#dff0ff)}.banner:nth-child(2){background:linear-gradient(135deg,#fff0f4,#ffe1e8)}.banner:nth-child(3){background:linear-gradient(135deg,#e5fff5,#d5f8e9)}.features{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;background:#eef9ff;padding:24px 3%;text-align:center}.features b{display:block;margin:6px}footer{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:25px;padding:32px 4%}.wa{position:fixed;right:20px;bottom:20px;background:#20c96b;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:30px;cursor:pointer;z-index:5}
+.modal{display:none;position:fixed;inset:0;background:#0008;z-index:20;align-items:center;justify-content:center;padding:15px}.modal.show{display:flex}.box{width:min(570px,100%);max-height:94vh;overflow:auto;background:#fff;border-radius:18px;padding:25px}.close{float:right;border:0;border-radius:50%;width:34px;height:34px;font-size:20px}.box label{display:block;font-size:12px;font-weight:700;margin-top:10px}.box input,.box textarea,.box select{width:100%;padding:12px;margin-top:5px;border:1px solid #d4dfe8;border-radius:8px;font:inherit}.box textarea{min-height:70px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.full{width:100%;margin-top:18px}.note{background:#eef8ff;padding:10px;border-radius:8px;font-size:12px}
+@media(max-width:950px){.grid{grid-template-columns:repeat(3,1fr)}.features{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.header{flex-wrap:wrap}.search{order:3;flex-basis:100%;max-width:none}.hero{padding:28px 5%}.hero h1{font-size:35px}.hero-art{display:none}.grid{grid-template-columns:repeat(2,1fr)}.banners{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}footer{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-
-<div class="top-strip">
-  <div>🚚 Home Collection Available</div>
-  <div>🇮🇳 <strong>PAN INDIA SERVICE AVAILABLE</strong></div>
-  <div>1000+ Tests</div>
-  <div>NABL Accredited Lab (Thyrocare)</div>
-  <a href="tel:+918178009011">☎ +91 81780 09011</a>
+<div class="top"><span>🚚 Home Collection Available</span><span>📍 PAN INDIA SERVICE AVAILABLE</span><span>🧪 1000+ Tests</span><span>🛡 NABL Accredited Lab (Thyrocare)</span></div>
+<header class="header"><div class="logo">TRICITY <span>THYROCARE</span><small>COLLECTION CENTRE · Your Health Our Priority</small></div><input class="search" placeholder="Search for tests, packages or health concerns..."><button class="headbtn" onclick="openBook()">Book a Test</button></header>
+<nav class="nav"><b>Home</b><span>Health Packages</span><span>All Tests ▾</span><span>Test by Health Concern ▾</span><span>Specialized Panels ▾</span><span>Home Collection</span><span>Offers</span><span>About Us</span><span>Contact Us</span></nav>
+<section class="hero"><div><h1>Good Health<br><span>Brighter Tomorrows</span></h1><p>Accurate Reports &nbsp; | &nbsp; Affordable Prices &nbsp; | &nbsp; Home Collection<br>Partnering with Thyrocare for a Healthier India.</p><span class="pill">✓ NABL Accredited</span><span class="pill">✓ Trusted by Millions</span><span class="pill">✓ Wide Range of Tests</span><span class="pill">✓ Home Collection</span><br><button class="red" onclick="openBook()">Book a Test Now →</button></div><div class="hero-art">🧑‍⚕️<br><small style="font-size:18px">PAN INDIA<br>SERVICE AVAILABLE</small></div></section>
+<main class="wrap">
+<div class="title"><h2>Popular Tests</h2><span>View All Tests →</span></div>
+<div class="grid">
+<div class="card"><div class="icon">🩸</div><h3>CBC (Complete Blood Count)</h3><div class="price">₹299 <span class="old">₹500</span></div><button onclick="openBook('CBC')">Book Test</button></div>
+<div class="card"><div class="icon">🦋</div><h3>Thyroid Profile (T3, T4, TSH)</h3><div class="price">₹499 <span class="old">₹800</span></div><button onclick="openBook('Thyroid Profile')">Book Test</button></div>
+<div class="card"><div class="icon">❤️</div><h3>Lipid Profile</h3><div class="price">₹399 <span class="old">₹700</span></div><button onclick="openBook('Lipid Profile')">Book Test</button></div>
+<div class="card"><div class="icon">🫀</div><h3>Liver Function Test (LFT)</h3><div class="price">₹399 <span class="old">₹700</span></div><button onclick="openBook('Liver Function Test')">Book Test</button></div>
+<div class="card"><div class="icon">🫘</div><h3>Kidney Function Test (RFT)</h3><div class="price">₹399 <span class="old">₹700</span></div><button onclick="openBook('Kidney Function Test')">Book Test</button></div>
+<div class="card"><div class="icon">🔬</div><h3>HbA1c (Glycated Haemoglobin)</h3><div class="price">₹399 <span class="old">₹700</span></div><button onclick="openBook('HbA1c')">Book Test</button></div>
 </div>
-
-<header class="header">
-  <a class="brand" href="#home">
-    <div class="logo-mark"><span>+</span></div>
-    <div class="brand-text"><strong>TRICITY</strong><b>THYROCARE COLLECTION CENTRE</b><small>Trusted Diagnostics for a Healthier Tomorrow</small></div>
-  </a>
-  <div class="search">
-    <input id="search" placeholder="Search for tests, packages or health concerns...">
-    <button onclick="searchSite()">⌕</button>
-  </div>
-  <div class="header-actions">
-    <button class="plain">♙ Login / Reports</button>
-    <button class="cart" onclick="openCart()">🛒<i id="count">0</i></button>
-    <button class="book" onclick="openBooking()">Book a Test</button>
-  </div>
-</header>
-
-<nav class="nav">
-  <a class="active" href="#home">Home</a>
-  <a href="#packages">Health Packages</a>
-  <a href="#tests">All Tests⌄</a>
-  <a href="#concerns">Test by Health Concern⌄</a>
-  <a href="#collection">Home Collection⌄</a>
-  <a href="#offers">Offers</a>
-  <a href="#about">About Us</a>
-  <a href="#contact">Contact Us</a>
-</nav>
-
-<main id="home">
-<section class="hero">
-  <div class="hero-copy">
-    <span class="mini">TRICITY THYROCARE COLLECTION CENTRE</span>
-    <h1>Take Charge of<br><span>Your Health Today</span></h1>
-    <p>Accurate Reports <b>|</b> Affordable Prices <b>|</b> Home Collection</p>
-    <div class="hero-features">
-      <div>⌂<span>Home<br>Sample Collection</span></div>
-      <div>♢<span>NABL Accredited<br>(Thyrocare)</span></div>
-      <div>▣<span>Trusted by<br>Millions</span></div>
-      <div>♡<span>Wide Range<br>of Tests</span></div>
-    </div>
-    <button class="hero-btn" onclick="openBooking()">Book a Test Now <b>→</b></button>
-  </div>
-  <div class="hero-visual">
-    <div class="offer-chip">THYROCARE®<small>Tests you can trust</small></div>
-    <div class="madhuri-card">
-      <div class="script">Good<br>Health<br>Brightens<br>Every Day</div>
-      <div class="madhuri-placeholder">Madhuri Dixit</div>
-      <small>Brand Ambassador – Thyrocare</small>
-    </div>
-  </div>
-</section>
-
-<section class="categories" id="concerns">
-  <div>♙<span>Full Body<br>Checkup</span></div>
-  <div>◉<span>Diabetes<br>Care</span></div>
-  <div>♢<span>Thyroid<br>Tests</span></div>
-  <div>◖<span>Liver<br>Function</span></div>
-  <div>♧<span>Kidney<br>Function</span></div>
-  <div>♡<span>Heart<br>Health</span></div>
-  <div>▣<span>Vitamin<br>Tests</span></div>
-  <div>✥<span>Cancer<br>Screening</span></div>
-  <div>♀<span>Women<br>Health</span></div>
-  <div>♂<span>Men<br>Health</span></div>
-  <div>♙<span>Senior Citizen<br>Care</span></div>
-  <div>▦<span>View All<br>Categories</span></div>
-</section>
-
-<section class="section" id="tests">
-  <div class="heading"><div><h2>Popular Tests</h2><p>Most booked tests at best prices</p></div><a href="#tests">View All Tests →</a></div>
-  <div class="test-grid">
-    <article class="test"><div class="ico">●</div><h3>CBC</h3><small>(Complete Blood Count)</small><p>Measures overall health and detects infections</p><strong>₹299</strong> <del>₹500</del><button onclick="add('CBC (Complete Blood Count)',299)">Book Test</button></article>
-    <article class="test"><div class="ico">◈</div><h3>HbA1c</h3><small>(Glycated Haemoglobin)</small><p>Average blood sugar level</p><strong>₹399</strong> <del>₹700</del><button onclick="add('HbA1c',399)">Book Test</button></article>
-    <article class="test"><div class="ico">♢</div><h3>Thyroid Profile</h3><small>(T3, T4, TSH)</small><p>Thyroid function test</p><strong>₹499</strong> <del>₹800</del><button onclick="add('Thyroid Profile',499)">Book Test</button></article>
-    <article class="test"><div class="ico">♡</div><h3>Lipid Profile</h3><small>Cholesterol & heart health</small><p>Cholesterol and heart health</p><strong>₹399</strong> <del>₹700</del><button onclick="add('Lipid Profile',399)">Book Test</button></article>
-    <article class="test"><div class="ico">◖</div><h3>Liver Function Test</h3><small>(LFT)</small><p>Assess liver health</p><strong>₹399</strong> <del>₹700</del><button onclick="add('Liver Function Test (LFT)',399)">Book Test</button></article>
-    <article class="test"><div class="ico">♧</div><h3>Kidney Function Test</h3><small>(RFT)</small><p>Assess kidney health</p><strong>₹399</strong> <del>₹700</del><button onclick="add('Kidney Function Test (RFT)',399)">Book Test</button></article>
-  </div>
-</section>
-
-<section class="section packages" id="packages">
-  <div class="heading"><div><h2>Health Packages</h2><p>Complete health checkups for you and your family</p></div><a href="#package-catalogue">View All Packages →</a></div>
-  <div class="package-grid">
-    <article class="pkg"><div class="pkg-icon blue">♙</div><h3>Full Body Checkup</h3><p>Complete health screening</p><strong>₹1,499</strong> <del>₹2,999</del><em>50% OFF</em><button onclick="add('Full Body Checkup',1499)">Book Package</button></article>
-    <article class="pkg"><div class="pkg-icon red">▣</div><h3>Diabetes Care Package</h3><p>Essential tests for diabetes</p><strong>₹999</strong> <del>₹1,999</del><em>50% OFF</em><button onclick="add('Diabetes Care Package',999)">Book Package</button></article>
-    <article class="pkg"><div class="pkg-icon violet">♢</div><h3>Thyroid Care Package</h3><p>Complete thyroid evaluation</p><strong>₹799</strong> <del>₹1,499</del><em>47% OFF</em><button onclick="add('Thyroid Care Package',799)">Book Package</button></article>
-    <article class="pkg"><div class="pkg-icon pink">♡</div><h3>Heart Health Package</h3><p>Keep your heart healthy</p><strong>₹1,299</strong> <del>₹2,499</del><em>48% OFF</em><button onclick="add('Heart Health Package',1299)">Book Package</button></article>
-    <article class="pkg"><div class="pkg-icon rose">♀</div><h3>Women Wellness Package</h3><p>Specially for women</p><strong>₹1,199</strong> <del>₹2,299</del><em>48% OFF</em><button onclick="add('Women Wellness Package',1199)">Book Package</button></article>
-    <article class="pkg"><div class="pkg-icon orange">♙</div><h3>Senior Citizen Package</h3><p>Comprehensive health check</p><strong>₹1,799</strong> <del>₹3,499</del><em>49% OFF</em><button onclick="add('Senior Citizen Package',1799)">Book Package</button></article>
-  </div>
-</section>
-
-<section class="cards-section" id="offers">
-  <article><img src="assets/package-1.png"><div><h3>Cancer Screening</h3><p>Cancer can be silent. Find it when it's easier to fight.</p><button onclick="document.getElementById('package-catalogue').scrollIntoView()">View Packages →</button></div></article>
-  <article><img src="assets/package-2.png"><div><h3>Autoimmunity</h3><p>Know if your immunity is fighting the wrong battle.</p><button onclick="document.getElementById('package-catalogue').scrollIntoView()">View Packages →</button></div></article>
-  <article><img src="assets/package-3.png"><div><h3>Healthy Mind</h3><p>Vital health markers are essential for a healthy mind.</p><button onclick="document.getElementById('package-catalogue').scrollIntoView()">View Packages →</button></div></article>
-  <article><img src="assets/package-5.png"><div><h3>Women's Health</h3><p>Every age, every phase and beyond.</p><button onclick="document.getElementById('package-catalogue').scrollIntoView()">View Packages →</button></div></article>
-  <article><img src="assets/package-8.png"><div><h3>Hair Fall</h3><p>Know the causes behind hair fall.</p><button onclick="document.getElementById('package-catalogue').scrollIntoView()">View Packages →</button></div></article>
-  <article><img src="assets/package-7.png"><div><h3>Hormone Check</h3><p>Check important hormone markers.</p><button onclick="document.getElementById('package-catalogue').scrollIntoView()">View Packages →</button></div></article>
-</section>
-
-<section class="trust" id="collection">
-  <div>⚗<b>1000+<small>Blood Tests</small></b></div>
-  <div>⚛<b>NABL<small>Accredited Lab</small></b></div>
-  <div>♡<b>Trusted by<small>Millions</small></b></div>
-  <div>⌂<b>PAN INDIA<small>Service Available</small></b></div>
-  <div>◇<b>Affordable<small>Pricing</small></b></div>
-  <div>▣<b>Fast & Secure<small>Reports</small></b></div>
-</section>
-
-<section class="collection-banner">
-  <div><span>HOME COLLECTION</span><h2>Book your sample collection<br><b>from anywhere in India.</b></h2><p>Safe, convenient and reliable diagnostics at your doorstep.</p><button onclick="openBooking()">Schedule Home Collection →</button></div>
-  <div class="steps"><span>01<br><b>Choose Test</b></span><span>02<br><b>Select Slot</b></span><span>03<br><b>Sample Collection</b></span><span>04<br><b>Get Reports</b></span></div>
-</section>
-
-<section class="catalogue" id="package-catalogue">
-  <div class="heading"><div><h2>Jaanch Package Catalogue</h2><p>Explore the uploaded package catalogue.</p></div></div>
-  <div class="gallery">
-    <img src="assets/package-1.png"><img src="assets/package-2.png"><img src="assets/package-3.png"><img src="assets/package-4.png">
-    <img src="assets/package-5.png"><img src="assets/package-6.png"><img src="assets/package-7.png"><img src="assets/package-8.png"><img src="assets/package-9.png">
-  </div>
-</section>
-
-<footer id="about">
-  <div class="footer-brand"><div class="logo-mark"><span>+</span></div><strong>TRICITY<br><small>THYROCARE COLLECTION CENTRE</small></strong><p>Trusted Diagnostics for a Healthier Tomorrow</p></div>
-  <div><b>Quick Links</b><a href="#home">Home</a><a href="#packages">Health Packages</a><a href="#tests">All Tests</a><a href="#offers">Offers</a></div>
-  <div><b>Services</b><a href="#collection">Home Collection</a><a href="#concerns">Health Concerns</a><a href="#package-catalogue">Jaanch Packages</a></div>
-  <div id="contact"><b>Contact</b><a href="tel:+918178009011">+91 81780 09011</a><a href="https://wa.me/918178009011" target="_blank">WhatsApp Booking</a><a>PAN INDIA SERVICE AVAILABLE</a></div>
-  <div class="copyright">© 2026 Tricity Thyrocare Collection Centre. All rights reserved.</div>
-</footer>
-
-<a class="whatsapp" href="https://wa.me/918178009011" target="_blank">☏</a>
-
-<div class="modal" id="bookingModal"><div class="modal-box"><button class="x" onclick="closeBooking()">×</button><h2>Book a Test</h2><p>Enter your details and continue to WhatsApp.</p><form onsubmit="booking(event)"><input required placeholder="Full Name"><input required type="tel" placeholder="Mobile Number"><input required type="date"><input id="item" placeholder="Test / Package Name"><button class="book">Continue on WhatsApp</button></form></div></div>
-
-<div class="modal" id="cartModal"><div class="modal-box"><button class="x" onclick="closeCart()">×</button><h2>Your Cart</h2><div id="cartItems"></div><h3 class="total">Total: <span id="total">₹0</span></h3><button class="book wide" onclick="checkout()">Proceed to Booking</button></div></div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<div class="title"><h2>Health Packages</h2><span>View All Packages →</span></div>
+<div class="grid">
+<div class="card"><div class="icon">🧍</div><h3>Full Body Checkup</h3><p>Complete health screening</p><div class="price">₹1,499</div><button onclick="openBook('Full Body Checkup')">Book Package</button></div>
+<div class="card"><div class="icon">🩸</div><h3>Diabetes Care Package</h3><p>Essential tests for diabetes</p><div class="price">₹999</div><button onclick="openBook('Diabetes Care Package')">Book Package</button></div>
+<div class="card"><div class="icon">🦋</div><h3>Thyroid Care Package</h3><p>Complete thyroid evaluation</p><div class="price">₹799</div><button onclick="openBook('Thyroid Care Package')">Book Package</button></div>
+<div class="card"><div class="icon">❤️</div><h3>Heart Health Package</h3><p>Keep your heart healthy</p><div class="price">₹1,299</div><button onclick="openBook('Heart Health Package')">Book Package</button></div>
+<div class="card"><div class="icon">♀️</div><h3>Women Wellness Package</h3><p>Specially for women</p><div class="price">₹1,199</div><button onclick="openBook('Women Wellness Package')">Book Package</button></div>
+<div class="card"><div class="icon">👨‍👩‍👧</div><h3>Senior Citizen Package</h3><p>Comprehensive health check</p><div class="price">₹1,799</div><button onclick="openBook('Senior Citizen Package')">Book Package</button></div>
+</div>
+<div class="banners"><div class="banner"><h2>Cancer Screening</h2><p>Early detection starts with the right screening.</p><button class="red" onclick="openBook('Cancer Screening')">View Packages →</button></div><div class="banner"><h2>Aarogyam Health Packages</h2><p>Explore preventive health packages and offers.</p><button class="red" onclick="openBook('Aarogyam Health Package')">Explore Now →</button></div><div class="banner"><h2>Book Home Collection</h2><p>Safe · Convenient · Reliable<br><b>PAN INDIA SERVICE AVAILABLE</b></p><button class="red" onclick="openBook()">Book Now →</button></div></div>
+</main>
+<section class="features"><div>🧪<b>1000+ Tests</b>Tests & Packages</div><div>⚛️<b>NABL</b>Accredited Lab</div><div>👨‍👩‍👧<b>Trusted</b>by Millions</div><div>🏠<b>Home Collection</b>Across India</div><div>🏷️<b>Affordable</b>Pricing</div><div>📋<b>Accurate</b>Reliable Reports</div></section>
+<footer><div><div class="logo">TRICITY <span>THYROCARE</span><small>COLLECTION CENTRE</small></div><p>Your health partner for accurate testing, preventive care and a healthier tomorrow.</p></div><div><b>Quick Links</b><p>Home<br>Health Packages<br>All Tests<br>Offers<br>Home Collection</p></div><div><b>Our Network</b><p>About Us<br>Contact Us<br>Terms & Conditions<br>Privacy Policy<br>FAQ</p></div><div><b>Follow Us</b><p>Facebook · Instagram · YouTube</p></div></footer>
+<div class="wa" onclick="openBook()">☏</div>
+<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeBook()">×</button><h2>Book Home Collection Slot</h2><p>Enter your details and confirm directly on WhatsApp.</p><div class="note">📅 Choose date &nbsp; • &nbsp; ⏰ Choose preferred time slot</div><form onsubmit="sendBook(event)">
+<label>Full Name<input id="nm" required placeholder="Enter full name"></label><label>Mobile Number<input id="mob" required type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile number"></label><label>Complete Address<textarea id="addr" required placeholder="House / Flat, Street, Area"></textarea></label>
+<div class="row"><label>City<input id="city" required placeholder="City"></label><label>Pincode<input id="pin" required pattern="[0-9]{6}" inputmode="numeric" placeholder="6-digit pincode"></label></div>
+<div class="row"><label>Date<input id="dt" required type="date"></label><label>Time Slot<select id="tm" required><option value="">Select slot</option><option>6:00 AM - 8:00 AM</option><option>8:00 AM - 10:00 AM</option><option>10:00 AM - 12:00 PM</option><option>12:00 PM - 2:00 PM</option><option>2:00 PM - 4:00 PM</option><option>4:00 PM - 6:00 PM</option><option>6:00 PM - 8:00 PM</option></select></label></div>
+<label>Test / Package<input id="test" placeholder="Selected test or package"></label><button class="red full">Confirm Booking on WhatsApp →</button></form></div></div>
+<script>
+function openBook(t=''){modal.classList.add('show');test.value=t;dt.min=new Date().toISOString().split('T')[0]}
+function closeBook(){modal.classList.remove('show')}
+function sendBook(e){e.preventDefault();let msg=`Hello Tricity Thyrocare Collection Centre,%0A%0A*HOME COLLECTION BOOKING*%0AName: ${encodeURIComponent(nm.value)}%0AMobile: ${encodeURIComponent(mob.value)}%0AAddress: ${encodeURIComponent(addr.value)}%0ACity: ${encodeURIComponent(city.value)}%0APincode: ${encodeURIComponent(pin.value)}%0ADate: ${encodeURIComponent(dt.value)}%0ATime Slot: ${encodeURIComponent(tm.value)}%0ATest/Package: ${encodeURIComponent(test.value||'Not specified')}`;window.open('https://wa.me/918178009011?text='+msg,'_blank')}
+</script>
+</body></html>
