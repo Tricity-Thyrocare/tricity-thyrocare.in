@@ -1,44 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tricity Thyrocare Collection Centre</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f9fd;color:#132b4a}
-.utility{background:#073f7b;color:#fff;padding:14px 4%;display:flex;justify-content:space-between;gap:18px;font-size:17px;font-weight:700;flex-wrap:wrap}
-.header{background:#fff;padding:12px 3%;display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:150px}
-.brand{display:flex;align-items:center;gap:17px;min-width:500px}.logo{width:110px;height:110px;border-radius:17px;background:#0b407a;display:grid;place-items:center;color:#fff;font-size:50px;font-weight:900}
-.brand h1{margin:0;color:#073f7b;font-size:40px;letter-spacing:.5px}.brand h1 span{color:#e92332}.brand .sub{font-size:27px;color:#69788b;font-weight:700}.brand p{margin:5px 0 0;color:#68778a;font-size:19px;letter-spacing:4px}
-.partner{border-left:2px solid #dce3ea;padding-left:42px;flex:1;text-align:center}.partner small{display:block;font-size:18px;font-style:italic}.partner strong{font-size:40px;color:#173b70}.partner strong em{color:#ef2939;font-style:normal}
-.tools{display:flex;align-items:center;gap:10px}.search{padding:14px;border:1px solid #ccd8e5;border-radius:9px;width:240px;font-size:14px}.book{background:#f12638;color:#fff;border:0;border-radius:9px;padding:16px 22px;font-weight:800;font-size:17px}
-.nav{background:#073f7b;display:flex;justify-content:center;overflow:auto;white-space:nowrap}.nav a{color:#fff;text-decoration:none;padding:17px 24px;font-weight:700}.nav a.active{background:#f12638}
-.hero{width:100%;background:#eaf5ff}.hero img{display:block;width:100%;height:auto;max-height:650px;object-fit:cover}
-.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:20px 3%;background:#fff}.feature{padding:19px;border-radius:12px;background:#f8fbff;box-shadow:0 3px 12px #dce6f0;font-weight:700;color:#123e72;font-size:17px}.feature small{font-weight:400;color:#63758a}
-.container{max-width:1200px;margin:auto;padding:30px 15px}.title{text-align:center;margin:10px 0 25px}.title h2{color:#073f7b;font-size:30px;margin:0 0 8px}.title p{color:#68778a}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #dce5ef;border:1px solid #e1e9f1}.card img{width:100%;height:135px;object-fit:cover;object-position:center}.card div{padding:16px}.card h3{font-size:18px;min-height:48px;margin:0 0 7px}.card p{color:#66778a}.card b{font-size:24px;color:#075ba8;display:block;margin:10px 0}
-button{border:0;border-radius:8px;padding:10px 12px;background:#eaf2fc;color:#174c80;font-weight:700;margin-right:6px;cursor:pointer}button.add{background:#ef4654;color:#fff}
-.float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;text-decoration:none;border-radius:30px;padding:13px 20px;font-weight:800;z-index:10;box-shadow:0 7px 25px #9ab8a5}.footer{background:#073f7b;color:#fff;text-align:center;padding:25px;margin-top:30px}
-@media(max-width:800px){.header{min-height:105px;padding:10px 14px}.brand{min-width:0}.logo{width:70px;height:70px;font-size:32px}.brand h1{font-size:23px}.brand .sub{font-size:15px}.brand p{font-size:11px;letter-spacing:1px}.partner{display:none}.tools .search{display:none}.features{grid-template-columns:repeat(2,1fr)}.nav{justify-content:flex-start}.nav a{padding:13px 15px;font-size:13px}}
+:root{--nav:#063d72;--red:#ef2638;--text:#142c49;--light:#f4f8fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--text)}
+.topline{height:46px;background:#073f7b;color:#fff;display:flex;align-items:center;justify-content:center;gap:28px;font-size:16px;font-weight:700;letter-spacing:.2px}
+.topline span{white-space:nowrap}
+.header{background:#fff;padding:10px 2.5%;border-bottom:1px solid #dce5ee}
+.header img{width:100%;height:auto;display:block;max-height:155px;object-fit:cover;object-position:center}
+.nav{height:58px;background:var(--nav);display:flex;align-items:stretch;justify-content:center;overflow:auto;white-space:nowrap;box-shadow:0 3px 10px #b9c7d6}
+.nav a{display:flex;align-items:center;padding:0 25px;color:#fff;text-decoration:none;font-size:16px;font-weight:700}
+.nav a:hover,.nav a.active{background:var(--red)}
+.hero{background:#eaf5ff;padding:0}
+.hero-content{max-width:1500px;margin:auto;position:relative;min-height:330px;display:flex;align-items:center;padding:50px 6%}
+.hero-copy{max-width:570px;z-index:2}.eyebrow{color:#e92332;font-weight:800;font-size:18px}
+.hero h1{font-size:52px;line-height:1.05;margin:10px 0;color:#073f7b}
+.hero h1 span{color:#ed2637}.hero p{font-size:20px;color:#53677e;line-height:1.5}
+.cta{display:inline-block;background:var(--red);color:#fff;padding:15px 24px;border-radius:8px;text-decoration:none;font-weight:800;font-size:17px}
+.hero-art{position:absolute;right:5%;bottom:0;width:430px;height:290px;background:linear-gradient(135deg,#dff5ff,#fff);border-radius:220px 220px 0 0;opacity:.9}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:18px 4%;background:#fff}
+.quick-card{background:#fff;border:1px solid #e1e9f2;border-radius:12px;padding:17px;box-shadow:0 3px 14px #dce5ee;color:#073f7b;font-weight:800}
+.quick-card small{display:block;color:#6b7b8e;font-weight:400;margin-top:5px}
+.container{max-width:1250px;margin:auto;padding:38px 18px}
+.section-title{text-align:center;margin-bottom:25px}.section-title h2{font-size:32px;margin:0;color:#073f7b}.section-title p{color:#6c7b8e}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e1e9f1;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px rgba(40,75,110,.10)}
+.card-img{height:145px;background:#073f7b;overflow:hidden}.card-img img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.72}
+.card-body{padding:16px}.card h3{font-size:18px;line-height:1.3;min-height:48px;margin:0 0 8px}.card span{color:#6b7b8e}.price{font-size:24px;font-weight:800;color:#075ca9;margin:12px 0}
+button{border:0;border-radius:8px;padding:10px 11px;font-weight:700;cursor:pointer}.details{background:#edf4fc;color:#174c80}.add{background:var(--red);color:#fff}
+.footer{background:#073f7b;color:#fff;margin-top:20px;padding:28px 5%;text-align:center}.footer strong{font-size:20px}
+.wa{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;text-decoration:none;border-radius:32px;padding:14px 21px;font-weight:800;box-shadow:0 8px 25px #91b29c;z-index:20}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:42px}.hero-art{width:330px}.quick{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){
+.topline{height:auto;min-height:42px;padding:8px 6px;gap:10px;font-size:12px;overflow:hidden}.topline span{white-space:nowrap}
+.header{padding:6px 8px}.header img{max-height:none;width:100%}
+.nav{height:50px;justify-content:flex-start}.nav a{padding:0 14px;font-size:13px}
+.hero-content{min-height:300px;padding:32px 20px}.hero h1{font-size:35px}.hero p{font-size:16px}.hero-art{right:-80px;width:300px;height:220px;opacity:.55}
+.quick{grid-template-columns:repeat(2,1fr);padding:12px}.quick-card{font-size:13px;padding:12px}
+.container{padding:28px 12px}.grid{grid-template-columns:1fr}.section-title h2{font-size:27px}.wa{right:12px;bottom:12px}
+}
 </style>
 </head>
 <body>
-<div class="utility"><span>🏠 Home Sample Collection Available</span><span>📞 8178009011</span><span>🚚 PAN INDIA SERVICE AVAILABLE</span><span>👥 Trusted by 10,000+ Families</span></div>
+
+<div class="topline">
+<span>🏠 Home Sample Collection Available</span>
+<span>•</span>
+<span>📞 8178009011</span>
+<span>•</span>
+<span>🚚 PAN INDIA SERVICE AVAILABLE</span>
+</div>
+
 <header class="header">
-<div class="brand"><div class="logo">T</div><div><h1>TRICITY <span>THYROCARE</span></h1><div class="sub">COLLECTION CENTRE</div><p>Your Health Our Priority</p></div></div>
-<div class="partner"><small>In association with</small><strong>Thyro<em>care</em></strong><div>Tests you can trust</div></div>
-<div class="tools"><input class="search" placeholder="Search for tests, packages..."><button class="book" onclick="location.hash='packages'">Book a Test</button></div>
+<img src="assets/header-reference.jpg" alt="Tricity Thyrocare Collection Centre header">
 </header>
-<nav class="nav"><a class="active" href="#">Home</a><a href="#packages">Health Packages</a><a href="#tests">Lab Tests</a><a href="#panels">Specialized Panels</a><a href="#partner">Our Partner</a><a href="#why">Why Choose Us</a><a href="#contact">Contact Us</a></nav>
-<section class="hero"><img src="assets/homepage-banner.png" alt="Tricity Thyrocare homepage"></section>
-<section class="features"><div class="feature">🧪 5000+ Tests<br><small>Wide range of diagnostic tests</small></div><div class="feature">👥 Trusted by Millions<br><small>Accurate & reliable reports</small></div><div class="feature">🛡️ NABL Accredited<br><small>High quality testing standards</small></div><div class="feature">🏠 Home Collection<br><small>PAN INDIA SERVICE AVAILABLE</small></div></section>
-<main class="container" id="packages"><div class="title"><h2>Health Packages</h2><p>Original package prices • View Details • Add to Cart</p></div><div class="grid"><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Thyroid Profile - Basic</h3><p>5 Tests</p><b>₹585</b><br><button onclick="details(0)">View Details</button><button class="add" onclick="add(0)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Thyroid Profile - Basic Plus</h3><p>5 Tests</p><b>₹1,200</b><br><button onclick="details(1)">View Details</button><button class="add" onclick="add(1)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Thyroid Profile - Advanced</h3><p>8 Tests</p><b>₹2,995</b><br><button onclick="details(2)">View Details</button><button class="add" onclick="add(2)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Cancer Screening Breast And Ovarian</h3><p>3 Tests</p><b>₹1,385</b><br><button onclick="details(3)">View Details</button><button class="add" onclick="add(3)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Cancer Screening Female Basic</h3><p>6 Tests</p><b>₹2,140</b><br><button onclick="details(4)">View Details</button><button class="add" onclick="add(4)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Cancer Screening Female Advanced</h3><p>37 Tests</p><b>₹4,275</b><br><button onclick="details(5)">View Details</button><button class="add" onclick="add(5)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Cancer Screening Male Basic</h3><p>3 Tests</p><b>₹1,385</b><br><button onclick="details(6)">View Details</button><button class="add" onclick="add(6)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Cancer Screening Male Advanced</h3><p>35 Tests</p><b>₹2,140</b><br><button onclick="details(7)">View Details</button><button class="add" onclick="add(7)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Autoimmune Screening Package</h3><p>34 Tests</p><b>₹1,799</b><br><button onclick="details(8)">View Details</button><button class="add" onclick="add(8)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Autoimmune Advanced Package</h3><p>38 Tests</p><b>₹3,499</b><br><button onclick="details(9)">View Details</button><button class="add" onclick="add(9)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Rheumatoid Arthritis Package</h3><p>38 Tests</p><b>₹2,099</b><br><button onclick="details(10)">View Details</button><button class="add" onclick="add(10)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch SLE Panel</h3><p>5 Tests</p><b>₹4,990</b><br><button onclick="details(11)">View Details</button><button class="add" onclick="add(11)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Autoimmune Thyroid Screening Panel</h3><p>6 Tests</p><b>₹2,645</b><br><button onclick="details(12)">View Details</button><button class="add" onclick="add(12)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Celiac Disease Screening Panel</h3><p>35 Tests</p><b>₹3,925</b><br><button onclick="details(13)">View Details</button><button class="add" onclick="add(13)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Healthy Mind Package</h3><p>37 Tests</p><b>₹1,799</b><br><button onclick="details(14)">View Details</button><button class="add" onclick="add(14)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Bone And Muscle Health</h3><p>41 Tests</p><b>₹2,135</b><br><button onclick="details(15)">View Details</button><button class="add" onclick="add(15)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch STD Profile Basic</h3><p>12 Tests</p><b>₹2,940</b><br><button onclick="details(16)">View Details</button><button class="add" onclick="add(16)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch STD Profile Advanced</h3><p>12 Tests</p><b>₹7,645</b><br><button onclick="details(17)">View Details</button><button class="add" onclick="add(17)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch STD Profile Extended</h3><p>14 Tests</p><b>₹12,350</b><br><button onclick="details(18)">View Details</button><button class="add" onclick="add(18)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch - PCOD (Mini)</h3><p>50 Tests</p><b>₹2,350</b><br><button onclick="details(19)">View Details</button><button class="add" onclick="add(19)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch - PCOD Basic</h3><p>69 Tests</p><b>₹5,880</b><br><button onclick="details(20)">View Details</button><button class="add" onclick="add(20)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch - PCOD Advanced</h3><p>73 Tests</p><b>₹6,740</b><br><button onclick="details(21)">View Details</button><button class="add" onclick="add(21)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Smoking Impact Package</h3><p>70 Tests</p><b>₹2,499</b><br><button onclick="details(22)">View Details</button><button class="add" onclick="add(22)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Female Hormone Screening</h3><p>7 Tests</p><b>₹1,499</b><br><button onclick="details(23)">View Details</button><button class="add" onclick="add(23)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Male Hormone Screening</h3><p>6 Tests</p><b>₹3,599</b><br><button onclick="details(24)">View Details</button><button class="add" onclick="add(24)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch - Mens Hairfall Screening Advanced</h3><p>47 Tests</p><b>₹3,495</b><br><button onclick="details(25)">View Details</button><button class="add" onclick="add(25)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch - Womens Hairfall Screening Advanced</h3><p>51 Tests</p><b>₹3,530</b><br><button onclick="details(26)">View Details</button><button class="add" onclick="add(26)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Antenatal Profile - Basic</h3><p>35 Tests</p><b>₹1,760</b><br><button onclick="details(27)">View Details</button><button class="add" onclick="add(27)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Antenatal Profile - Advanced</h3><p>51 Tests</p><b>₹3,290</b><br><button onclick="details(28)">View Details</button><button class="add" onclick="add(28)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Post Delivery Health Check</h3><p>56 Tests</p><b>₹2,599</b><br><button onclick="details(29)">View Details</button><button class="add" onclick="add(29)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Anemia Profile Basic</h3><p>58 Tests</p><b>₹2,560</b><br><button onclick="details(30)">View Details</button><button class="add" onclick="add(30)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Anemia Profile Advanced</h3><p>70 Tests</p><b>₹4,595</b><br><button onclick="details(31)">View Details</button><button class="add" onclick="add(31)">Add to Cart</button></div></article><article class="card"><img src="assets/homepage-banner.png" alt=""><div><h3>Jaanch Menopause Assessment Panel</h3><p>20 Tests</p><b>₹3,565</b><br><button onclick="details(32)">View Details</button><button class="add" onclick="add(32)">Add to Cart</button></div></article></div>
-<section id="tests" class="title"><h2>Lab Tests</h2><p>CBC • LFT • RFT • Lipid Profile • TFT • HbA1c and more</p></section>
-<section id="panels" class="title"><h2>Specialized Panels</h2><p>Thyroid • Diabetes • Women’s Health • Men’s Health • Cancer Screening</p></section></main>
-<a class="float" href="https://wa.me/918178009011" target="_blank">🟢 WhatsApp Booking</a>
-<footer class="footer" id="contact">TRICITY THYROCARE COLLECTION CENTRE • PAN INDIA SERVICE AVAILABLE • 8178009011</footer>
+
+<nav class="nav">
+<a class="active" href="#">Home</a>
+<a href="#packages">Health Packages</a>
+<a href="#tests">Lab Tests</a>
+<a href="#panels">Specialized Panels</a>
+<a href="#partner">Our Partner</a>
+<a href="#why">Why Choose Us</a>
+<a href="#contact">Contact Us</a>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<div class="hero-copy">
+<div class="eyebrow">TRICITY THYROCARE COLLECTION CENTRE</div>
+<h1>Your Health,<br><span>Our Priority.</span></h1>
+<p>Accurate tests, trusted reports and convenient home sample collection with a professional booking experience.</p>
+<a class="cta" href="#packages">Explore Health Packages →</a>
+</div>
+<div class="hero-art"></div>
+</div>
+</section>
+
+<section class="quick">
+<div class="quick-card">🧪 5000+ Tests<small>Wide range of diagnostic tests</small></div>
+<div class="quick-card">👥 Trusted Reports<small>Accurate & reliable reporting</small></div>
+<div class="quick-card">🏠 Home Collection<small>Convenient sample collection</small></div>
+<div class="quick-card">🛡️ Quality Standards<small>Trusted diagnostic service</small></div>
+</section>
+
+<main class="container">
+<section id="packages">
+<div class="section-title"><h2>Health Packages</h2><p>Original package prices • View Details • Add to Cart</p></div>
+<div class="grid"><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Thyroid Profile - Basic</h3><span>5 Tests</span>
+<div class="price">₹585</div>
+<button class="details" onclick="details(0)">View Details</button>
+<button class="add" onclick="add(0)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Thyroid Profile - Basic Plus</h3><span>5 Tests</span>
+<div class="price">₹1,200</div>
+<button class="details" onclick="details(1)">View Details</button>
+<button class="add" onclick="add(1)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Thyroid Profile - Advanced</h3><span>8 Tests</span>
+<div class="price">₹2,995</div>
+<button class="details" onclick="details(2)">View Details</button>
+<button class="add" onclick="add(2)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Cancer Screening Breast And Ovarian</h3><span>3 Tests</span>
+<div class="price">₹1,385</div>
+<button class="details" onclick="details(3)">View Details</button>
+<button class="add" onclick="add(3)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Cancer Screening Female Basic</h3><span>6 Tests</span>
+<div class="price">₹2,140</div>
+<button class="details" onclick="details(4)">View Details</button>
+<button class="add" onclick="add(4)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Cancer Screening Female Advanced</h3><span>37 Tests</span>
+<div class="price">₹4,275</div>
+<button class="details" onclick="details(5)">View Details</button>
+<button class="add" onclick="add(5)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Cancer Screening Male Basic</h3><span>3 Tests</span>
+<div class="price">₹1,385</div>
+<button class="details" onclick="details(6)">View Details</button>
+<button class="add" onclick="add(6)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Cancer Screening Male Advanced</h3><span>35 Tests</span>
+<div class="price">₹2,140</div>
+<button class="details" onclick="details(7)">View Details</button>
+<button class="add" onclick="add(7)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Autoimmune Screening Package</h3><span>34 Tests</span>
+<div class="price">₹1,799</div>
+<button class="details" onclick="details(8)">View Details</button>
+<button class="add" onclick="add(8)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Autoimmune Advanced Package</h3><span>38 Tests</span>
+<div class="price">₹3,499</div>
+<button class="details" onclick="details(9)">View Details</button>
+<button class="add" onclick="add(9)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Rheumatoid Arthritis Package</h3><span>38 Tests</span>
+<div class="price">₹2,099</div>
+<button class="details" onclick="details(10)">View Details</button>
+<button class="add" onclick="add(10)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch SLE Panel</h3><span>5 Tests</span>
+<div class="price">₹4,990</div>
+<button class="details" onclick="details(11)">View Details</button>
+<button class="add" onclick="add(11)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Autoimmune Thyroid Screening Panel</h3><span>6 Tests</span>
+<div class="price">₹2,645</div>
+<button class="details" onclick="details(12)">View Details</button>
+<button class="add" onclick="add(12)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Celiac Disease Screening Panel</h3><span>35 Tests</span>
+<div class="price">₹3,925</div>
+<button class="details" onclick="details(13)">View Details</button>
+<button class="add" onclick="add(13)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Healthy Mind Package</h3><span>37 Tests</span>
+<div class="price">₹1,799</div>
+<button class="details" onclick="details(14)">View Details</button>
+<button class="add" onclick="add(14)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Bone And Muscle Health</h3><span>41 Tests</span>
+<div class="price">₹2,135</div>
+<button class="details" onclick="details(15)">View Details</button>
+<button class="add" onclick="add(15)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch STD Profile Basic</h3><span>12 Tests</span>
+<div class="price">₹2,940</div>
+<button class="details" onclick="details(16)">View Details</button>
+<button class="add" onclick="add(16)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch STD Profile Advanced</h3><span>12 Tests</span>
+<div class="price">₹7,645</div>
+<button class="details" onclick="details(17)">View Details</button>
+<button class="add" onclick="add(17)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch STD Profile Extended</h3><span>14 Tests</span>
+<div class="price">₹12,350</div>
+<button class="details" onclick="details(18)">View Details</button>
+<button class="add" onclick="add(18)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch - PCOD (Mini)</h3><span>50 Tests</span>
+<div class="price">₹2,350</div>
+<button class="details" onclick="details(19)">View Details</button>
+<button class="add" onclick="add(19)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch - PCOD Basic</h3><span>69 Tests</span>
+<div class="price">₹5,880</div>
+<button class="details" onclick="details(20)">View Details</button>
+<button class="add" onclick="add(20)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch - PCOD Advanced</h3><span>73 Tests</span>
+<div class="price">₹6,740</div>
+<button class="details" onclick="details(21)">View Details</button>
+<button class="add" onclick="add(21)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Smoking Impact Package</h3><span>70 Tests</span>
+<div class="price">₹2,499</div>
+<button class="details" onclick="details(22)">View Details</button>
+<button class="add" onclick="add(22)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Female Hormone Screening</h3><span>7 Tests</span>
+<div class="price">₹1,499</div>
+<button class="details" onclick="details(23)">View Details</button>
+<button class="add" onclick="add(23)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Male Hormone Screening</h3><span>6 Tests</span>
+<div class="price">₹3,599</div>
+<button class="details" onclick="details(24)">View Details</button>
+<button class="add" onclick="add(24)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch - Mens Hairfall Screening Advanced</h3><span>47 Tests</span>
+<div class="price">₹3,495</div>
+<button class="details" onclick="details(25)">View Details</button>
+<button class="add" onclick="add(25)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch - Womens Hairfall Screening Advanced</h3><span>51 Tests</span>
+<div class="price">₹3,530</div>
+<button class="details" onclick="details(26)">View Details</button>
+<button class="add" onclick="add(26)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Antenatal Profile - Basic</h3><span>35 Tests</span>
+<div class="price">₹1,760</div>
+<button class="details" onclick="details(27)">View Details</button>
+<button class="add" onclick="add(27)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Antenatal Profile - Advanced</h3><span>51 Tests</span>
+<div class="price">₹3,290</div>
+<button class="details" onclick="details(28)">View Details</button>
+<button class="add" onclick="add(28)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Post Delivery Health Check</h3><span>56 Tests</span>
+<div class="price">₹2,599</div>
+<button class="details" onclick="details(29)">View Details</button>
+<button class="add" onclick="add(29)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Anemia Profile Basic</h3><span>58 Tests</span>
+<div class="price">₹2,560</div>
+<button class="details" onclick="details(30)">View Details</button>
+<button class="add" onclick="add(30)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Anemia Profile Advanced</h3><span>70 Tests</span>
+<div class="price">₹4,595</div>
+<button class="details" onclick="details(31)">View Details</button>
+<button class="add" onclick="add(31)">Add to Cart</button></div></article><article class="card">
+<div class="card-img"><img src="assets/header-reference.jpg" alt=""></div>
+<div class="card-body"><h3>Jaanch Menopause Assessment Panel</h3><span>20 Tests</span>
+<div class="price">₹3,565</div>
+<button class="details" onclick="details(32)">View Details</button>
+<button class="add" onclick="add(32)">Add to Cart</button></div></article></div>
+</section>
+
+<section id="tests" class="section-title" style="margin-top:55px">
+<h2>Lab Tests</h2><p>CBC • LFT • RFT • Lipid Profile • TFT • HbA1c and more</p>
+</section>
+<section id="panels" class="section-title" style="margin-top:55px">
+<h2>Specialized Panels</h2><p>Thyroid • Diabetes • Women's Health • Men's Health • Cancer Screening</p>
+</section>
+</main>
+
+<a class="wa" href="https://wa.me/918178009011" target="_blank">🟢 WhatsApp Booking</a>
+
+<footer class="footer" id="contact">
+<strong>TRICITY THYROCARE COLLECTION CENTRE</strong><br><br>
+PAN INDIA SERVICE AVAILABLE • Home Sample Collection • 8178009011
+</footer>
+
 <script>
 const packages=[('Jaanch Thyroid Profile - Basic', 5, 585), ('Jaanch Thyroid Profile - Basic Plus', 5, 1200), ('Jaanch Thyroid Profile - Advanced', 8, 2995), ('Jaanch Cancer Screening Breast And Ovarian', 3, 1385), ('Jaanch Cancer Screening Female Basic', 6, 2140), ('Jaanch Cancer Screening Female Advanced', 37, 4275), ('Jaanch Cancer Screening Male Basic', 3, 1385), ('Jaanch Cancer Screening Male Advanced', 35, 2140), ('Jaanch Autoimmune Screening Package', 34, 1799), ('Jaanch Autoimmune Advanced Package', 38, 3499), ('Jaanch Rheumatoid Arthritis Package', 38, 2099), ('Jaanch SLE Panel', 5, 4990), ('Jaanch Autoimmune Thyroid Screening Panel', 6, 2645), ('Jaanch Celiac Disease Screening Panel', 35, 3925), ('Jaanch Healthy Mind Package', 37, 1799), ('Jaanch Bone And Muscle Health', 41, 2135), ('Jaanch STD Profile Basic', 12, 2940), ('Jaanch STD Profile Advanced', 12, 7645), ('Jaanch STD Profile Extended', 14, 12350), ('Jaanch - PCOD (Mini)', 50, 2350), ('Jaanch - PCOD Basic', 69, 5880), ('Jaanch - PCOD Advanced', 73, 6740), ('Jaanch Smoking Impact Package', 70, 2499), ('Jaanch Female Hormone Screening', 7, 1499), ('Jaanch Male Hormone Screening', 6, 3599), ('Jaanch - Mens Hairfall Screening Advanced', 47, 3495), ('Jaanch - Womens Hairfall Screening Advanced', 51, 3530), ('Jaanch Antenatal Profile - Basic', 35, 1760), ('Jaanch Antenatal Profile - Advanced', 51, 3290), ('Jaanch Post Delivery Health Check', 56, 2599), ('Jaanch Anemia Profile Basic', 58, 2560), ('Jaanch Anemia Profile Advanced', 70, 4595), ('Jaanch Menopause Assessment Panel', 20, 3565)];
-function details(i){let p=packages[i];alert(p[0]+"\n\nTests: "+p[1]+"\nPrice: ₹"+p[2].toLocaleString("en-IN"));}
-function add(i){let c=JSON.parse(localStorage.getItem("tricityCart")||"[]");c.push({name:packages[i][0],tests:packages[i][1],price:packages[i][2]});localStorage.setItem("tricityCart",JSON.stringify(c));alert("Added to cart: "+packages[i][0]);}
+function details(i){let p=packages[i];alert(p[0]+"\n\nTotal Tests: "+p[1]+"\nPrice: ₹"+p[2].toLocaleString("en-IN"))}
+function add(i){let c=JSON.parse(localStorage.getItem("tricityCart")||"[]");c.push({name:packages[i][0],tests:packages[i][1],price:packages[i][2]});localStorage.setItem("tricityCart",JSON.stringify(c));alert("Added to cart: "+packages[i][0])}
 </script>
-</body></html>
+</body>
+</html>
