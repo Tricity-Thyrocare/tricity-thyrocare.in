@@ -3,152 +3,201 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tricity Thyrocare Collection Centre | Health Packages & Home Collection</title>
-<meta name="description" content="Book blood tests, health packages and home sample collection with Tricity Thyrocare Collection Centre.">
+<title>Tricity Thyrocare Collection Centre</title>
 <style>
-:root{
- --blue:#143b73; --blue2:#1e5aa8; --ink:#14213d; --muted:#667085;
- --red:#ef4b55; --bg:#f6f9fc; --card:#fff; --line:#e5eaf1;
- --shadow:0 18px 55px rgba(20,59,115,.12);
-}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
-a{text-decoration:none;color:inherit}
-.top{background:var(--blue);color:#fff;text-align:center;padding:9px 16px;font-size:13px}
-nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.navin{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 20px}
-.brand{display:flex;gap:10px;align-items:center;font-weight:850;letter-spacing:-.4px}
-.logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#143b73,#4b8dd9);display:grid;place-items:center;color:white;font-weight:900}
-.brand small{display:block;font-size:10px;color:var(--muted);font-weight:650;margin-top:2px}
-.links{display:flex;gap:22px;font-size:14px;font-weight:700}
-.links a:hover{color:var(--red)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:13px;padding:13px 18px;font-weight:800;cursor:pointer}
-.primary{background:var(--red);color:#fff;box-shadow:0 10px 25px rgba(239,75,85,.25)}
-.secondary{background:#edf4ff;color:var(--blue)}
-.hero{max-width:1180px;margin:30px auto 0;padding:0 20px}
-.heroBox{min-height:510px;border-radius:30px;overflow:hidden;position:relative;background:linear-gradient(120deg,#f9d9d1 0%,#fff 52%,#eef5ff 100%);box-shadow:var(--shadow)}
-.heroCopy{position:relative;z-index:2;width:56%;padding:65px 50px}
-.kicker{display:inline-flex;padding:8px 12px;border-radius:99px;background:#fff;color:var(--red);font-weight:850;font-size:12px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
-h1{font-size:clamp(36px,5vw,64px);line-height:1.02;margin:20px 0 15px;letter-spacing:-2.5px}
-.heroCopy p{font-size:18px;line-height:1.65;color:#536174;max-width:610px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
-.heroPhoto{position:absolute;right:0;bottom:0;width:48%;height:100%;object-fit:cover;object-position:center top;mix-blend-mode:multiply}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-38px;position:relative;z-index:3;padding:0 30px}
-.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 12px 35px rgba(20,59,115,.08)}
-.stat b{font-size:22px;display:block}.stat span{font-size:12px;color:var(--muted)}
-.section{max-width:1180px;margin:75px auto;padding:0 20px}
-.title{text-align:center;margin-bottom:30px}.title h2{font-size:38px;margin:0 0 8px;letter-spacing:-1.2px}.title p{color:var(--muted);margin:0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 10px 30px rgba(20,59,115,.06)}
-.tag{font-size:11px;font-weight:850;color:var(--red);text-transform:uppercase;letter-spacing:.7px}
-.card h3{margin:8px 0 7px;font-size:20px}.card p{color:var(--muted);font-size:14px;line-height:1.5;min-height:42px}
-.price{font-size:24px;font-weight:900;color:var(--blue);margin:12px 0}
-.old{text-decoration:line-through;color:#98a2b3;font-size:14px;margin-right:7px}
-.row{display:flex;gap:10px;align-items:center}.row .btn{flex:1}
-.tests{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.test{background:#fff;border:1px solid var(--line);padding:15px 17px;border-radius:15px;display:flex;justify-content:space-between;align-items:center;font-weight:750}
-.test span{color:var(--red);font-size:12px}
-.band{background:linear-gradient(135deg,var(--blue),#2e6bb8);color:#fff;border-radius:28px;padding:40px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.band p{color:#dce9fa;margin:6px 0 0}
-.band .primary{background:#fff;color:var(--blue)}
-.booking{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}
-.form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}
-input,select,textarea{width:100%;padding:14px;border:1px solid #d9e0ea;border-radius:12px;margin:6px 0 13px;font:inherit}
-label{font-size:13px;font-weight:750}
-.footer{background:#0e2b52;color:#dce9fa;margin-top:80px;padding:45px 20px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px}.foot h3{color:#fff;margin-top:0}.foot p{margin:7px 0;color:#b9c9dd}
-.float{position:fixed;right:18px;bottom:18px;z-index:60;background:#19a96b;color:#fff;border-radius:999px;padding:14px 18px;font-weight:850;box-shadow:0 15px 30px rgba(0,0,0,.2)}
-.popup{position:fixed;inset:0;background:rgba(5,19,39,.72);z-index:100;display:grid;place-items:center;padding:18px}
-.popbox{background:#fff;border-radius:26px;max-width:780px;width:100%;overflow:hidden;box-shadow:0 25px 90px rgba(0,0,0,.35);position:relative}
-.popimg{width:100%;max-height:62vh;object-fit:cover;object-position:center top;display:block}
-.popbody{padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.popbody strong{font-size:19px}.popbody span{display:block;color:var(--muted);font-size:13px;margin-top:3px}
-.close{position:absolute;right:14px;top:14px;border:0;border-radius:50%;width:40px;height:40px;background:#fff;font-size:20px;cursor:pointer}
-@media(max-width:850px){
- .links{display:none}.heroCopy{width:100%;padding:38px 28px 300px}.heroPhoto{width:100%;height:58%;top:auto;opacity:.9}.stats{grid-template-columns:repeat(2,1fr);padding:0 18px;margin-top:-20px}
- .grid,.tests,.booking{grid-template-columns:1fr}.section{margin:55px auto}.band{display:block;padding:28px}.band .btn{margin-top:18px}.foot{display:block}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f8fc;color:#14243b}
+.topbar{background:#123f79;color:#fff;text-align:center;padding:9px 12px;font-size:14px}
+.header-banner{background:#fff;border-bottom:1px solid #e2e8f0}
+.header-banner img{display:block;width:100%;height:auto}
+.nav{background:#073b68;display:flex;align-items:center;justify-content:center;gap:0;overflow:auto;white-space:nowrap}
+.nav a{color:#fff;text-decoration:none;font-weight:700;padding:15px 22px}
+.nav a:first-child{background:#ef4050}
+.nav .book{background:#ef4050;margin-left:10px;border-radius:9px}
+.container{max-width:1200px;margin:auto;padding:24px 14px}
+.hero{border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 8px 28px #dbe4ef;margin-bottom:28px}
+.hero img{display:block;width:100%;height:auto}
+.section-title{text-align:center;margin:30px 0 18px}
+.section-title h2{margin:0;color:#173d70;font-size:30px}
+.section-title p{color:#66758a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e3eaf2;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px rgba(31,58,91,.08)}
+.card img{width:100%;height:145px;object-fit:cover}
+.card-body{padding:16px}
+.card h3{margin:0 0 8px;font-size:18px;line-height:1.3;min-height:47px}
+.tests{color:#6a788a;margin:5px 0 12px}
+.price{font-size:24px;font-weight:800;color:#0a5ba8;margin-bottom:14px}
+.actions{display:flex;gap:8px}
+button{border:0;border-radius:9px;padding:11px 13px;font-weight:700;cursor:pointer}
+.details{background:#edf4ff;color:#154b86}.cart{background:#ef4e5d;color:white}
+.popular img{display:block;width:100%;border-radius:18px;box-shadow:0 7px 24px #d8e2ee}
+.footer{margin-top:40px;background:#123f79;color:white;text-align:center;padding:25px}
+.float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;border-radius:30px;padding:11px 18px 11px 12px;font-weight:800;text-decoration:none;box-shadow:0 8px 25px #9ab6a6;z-index:10;display:flex;align-items:center;gap:9px}
+.wa-logo{width:30px;height:30px;display:block}
+.cartbox{position:fixed;right:15px;top:90px;width:min(380px,calc(100% - 30px));background:#fff;border-radius:16px;box-shadow:0 15px 50px #8ea0b5;padding:18px;z-index:20;display:none}
+.cartbox h3{margin-top:0}.cart-item{padding:10px 0;border-bottom:1px solid #eee;font-size:14px}
+.close{float:right;background:#eee}
+@media(max-width:650px){
+ .nav{justify-content:flex-start}
+ .nav a{padding:12px 15px;font-size:13px}
+ .nav .book{margin-left:0}
+ .section-title h2{font-size:24px}
+ .float{right:12px;bottom:14px}
 }
 </style>
 </head>
 <body>
-<div class="top">🏠 Home Sample Collection Available &nbsp; • &nbsp; 📞 8178009011</div>
-<nav><div class="navin">
-  <a class="brand" href="#home"><div class="logo">T</div><div>TRICITY THYROCARE<small>COLLECTION CENTRE</small></div></a>
-  <div class="links"><a href="#packages">Packages</a><a href="#tests">Tests</a><a href="#homecollection">Home Collection</a><a href="#book">Book Test</a></div>
-  <a class="btn primary" href="#book">Book a Test</a>
-</div></nav>
 
-<main id="home">
-<section class="hero"><div class="heroBox">
- <div class="heroCopy">
-  <span class="kicker">FESTIVE HEALTH CHECK • JAANCH PACKAGES</span>
-  <h1>Complete Health Checkups, Made Simple.</h1>
-  <p>Explore curated health packages, routine blood tests and convenient home sample collection — all in one premium booking experience.</p>
-  <div class="actions"><a class="btn primary" href="#packages">Explore Packages →</a><a class="btn secondary" href="#book">Book Home Collection</a></div>
- </div>
- <img class="heroPhoto" src="assets/hero-photo.jpg" alt="Festive health campaign visual">
+<div class="topbar">
+🏠 Home Sample Collection Available &nbsp; • &nbsp; 📞 8178009011
+&nbsp; • &nbsp; 🚚 PAN INDIA SERVICE AVAILABLE
 </div>
-<div class="stats">
- <div class="stat"><b>100+</b><span>Tests & Packages</span></div><div class="stat"><b>🏠</b><span>Home Sample Collection</span></div><div class="stat"><b>⚡</b><span>Easy Online Booking</span></div><div class="stat"><b>📄</b><span>Digital Reports</span></div>
-</div></section>
 
-<section class="section" id="packages"><div class="title"><h2>Featured Health Packages</h2><p>Selected package information from the supplied Jaanch booklet.</p></div>
-<div class="grid">
- <article class="card"><span class="tag">Diabetes</span><h3>Jaanch Diabetes Screening</h3><p>12-parameter screening package.</p><div class="price">₹899</div><div class="row"><a class="btn primary" href="#book">Book</a><a class="btn secondary" href="assets/jaanch-cover.jpg">View Booklet</a></div></article>
- <article class="card"><span class="tag">Heart</span><h3>Jaanch Heart Screening</h3><p>16-parameter heart screening package.</p><div class="price">₹899</div><div class="row"><a class="btn primary" href="#book">Book</a><a class="btn secondary" href="assets/jaanch-cover.jpg">Details</a></div></article>
- <article class="card"><span class="tag">Thyroid</span><h3>Thyroid Profile – Basic</h3><p>5-parameter thyroid profile.</p><div class="price">₹585</div><div class="row"><a class="btn primary" href="#book">Book</a><a class="btn secondary" href="assets/jaanch-cover.jpg">Details</a></div></article>
- <article class="card"><span class="tag">Women's Health</span><h3>Jaanch PCOD (Mini)</h3><p>50-parameter PCOD screening package.</p><div class="price">₹2,350</div><div class="row"><a class="btn primary" href="#book">Book</a><a class="btn secondary" href="assets/jaanch-cover.jpg">Details</a></div></article>
- <article class="card"><span class="tag">Liver Health</span><h3>Jaanch Fatty Liver Screening</h3><p>29-parameter liver screening package.</p><div class="price">₹1,799</div><div class="row"><a class="btn primary" href="#book">Book</a><a class="btn secondary" href="assets/jaanch-cover.jpg">Details</a></div></article>
- <article class="card"><span class="tag">Pre-Operative</span><h3>Jaanch Pre-Operative Package Mini</h3><p>64-parameter pre-operative package.</p><div class="price">₹1,290</div><div class="row"><a class="btn primary" href="#book">Book</a><a class="btn secondary" href="assets/jaanch-cover.jpg">Details</a></div></article>
-</div></section>
+<!-- New header: Tricity Thyrocare + association with Thyrocare -->
+<div class="header-banner">
+  <img src="assets/website-header.png" alt="Tricity Thyrocare Collection Centre">
+</div>
 
-<section class="section"><div class="band"><div><h2 style="margin:0">Health doesn’t take holidays.</h2><p>Bring the supplied festive Jaanch campaign onto your website with a clean, mobile-first experience.</p></div><a class="btn primary" href="#book">Book Now</a></div></section>
+<div class="nav">
+  <a href="#home">Home</a>
+  <a href="#packages">Health Packages</a>
+  <a href="#tests">Lab Tests</a>
+  <a href="#popular">Popular Checkups</a>
+  <a href="#contact">Contact</a>
+  <a href="#packages" class="book">Book a Test</a>
+</div>
 
-<section class="section" id="tests"><div class="title"><h2>Popular Tests</h2><p>Quick access to commonly searched blood tests.</p></div>
-<div class="tests">
- <div class="test">CBC / Complete Blood Count <span>BOOK</span></div><div class="test">Lipid Profile <span>BOOK</span></div><div class="test">HbA1c <span>BOOK</span></div>
- <div class="test">Thyroid Profile <span>BOOK</span></div><div class="test">Vitamin D <span>BOOK</span></div><div class="test">Vitamin B12 <span>BOOK</span></div>
- <div class="test">LFT <span>BOOK</span></div><div class="test">RFT / Kidney Profile <span>BOOK</span></div><div class="test">Urine Routine <span>BOOK</span></div>
-</div></section>
+<main class="container" id="home">
 
-<section class="section" id="homecollection"><div class="title"><h2>Home Sample Collection</h2><p>Choose a convenient slot and request collection at your doorstep.</p></div>
-<div class="booking">
- <div class="card" style="padding:32px"><h3 style="font-size:27px">Simple. Convenient. Digital.</h3><p>Book your preferred test or package, select a date and time, and our team can confirm the request on WhatsApp.</p><div class="actions"><a class="btn primary" href="#book">Request Collection</a><a class="btn secondary" href="tel:8178009011">Call 8178009011</a></div></div>
- <img src="assets/jaanch-cover.jpg" style="width:100%;height:100%;min-height:290px;object-fit:cover;border-radius:24px;border:1px solid var(--line)" alt="Supplied Jaanch booklet cover">
-</div></section>
+<section class="hero">
+  <img src="assets/jaanch-promo.jpg" alt="Jaanch health package promotion">
+</section>
 
-<section class="section" id="book"><div class="title"><h2>Book Your Test</h2><p>Fill in your details — the button opens WhatsApp with your booking request.</p></div>
-<div class="form">
- <form id="bookingForm">
-  <label>Full Name</label><input id="name" required placeholder="Your name">
-  <label>Mobile Number</label><input id="mobile" required inputmode="numeric" placeholder="10-digit mobile number">
-  <label>Test / Package</label><select id="package"><option>Full Body Health Package</option><option>Jaanch Diabetes Screening</option><option>Jaanch Heart Screening</option><option>Thyroid Profile – Basic</option><option>Jaanch PCOD (Mini)</option><option>Jaanch Fatty Liver Screening</option><option>Jaanch Pre-Operative Package Mini</option><option>Other Test</option></select>
-  <label>Preferred Date</label><input id="date" type="date">
-  <label>Preferred Time</label><select id="time"><option>6:00 AM – 8:00 AM</option><option>8:00 AM – 10:00 AM</option><option>10:00 AM – 12:00 PM</option><option>12:00 PM – 2:00 PM</option><option>2:00 PM – 5:00 PM</option><option>5:00 PM – 8:00 PM</option></select>
-  <label>Address (for home collection)</label><textarea id="address" rows="3" placeholder="Enter address"></textarea>
-  <button class="btn primary" type="submit" style="width:100%">Send Booking Request on WhatsApp</button>
- </form>
-</div></section>
+<section id="packages">
+<div class="section-title">
+  <h2>Jaanch Health Packages</h2>
+  <p>Package price • View Details • Add to Cart</p>
+</div>
+<div class="grid" id="cards"></div>
+</section>
+
+<section id="tests">
+<div class="section-title">
+  <h2>Lab Tests</h2>
+  <p>CBC • LFT • RFT • Lipid Profile • TFT • HbA1c and more</p>
+</div>
+</section>
+
+<section id="popular" class="popular">
+<div class="section-title">
+  <h2>Popular Health Checkups</h2>
+  <p>Complete health checkup information</p>
+</div>
+<img src="assets/popular-health-checkup.jpg" alt="Popular health checkups">
+</section>
+
 </main>
 
-<footer class="footer"><div class="foot"><div><h3>TRICITY THYROCARE COLLECTION CENTRE</h3><p>Professional diagnostic sample collection services.</p></div><div><h3>Contact</h3><p>📞 8178009011</p><p>✉ tricitythyrocarecollection@gmail.com</p></div></div></footer>
-<a class="float" href="https://wa.me/918178009011" target="_blank">💬 WhatsApp Booking</a>
-
-<div class="popup" id="popup">
- <div class="popbox">
-  <button class="close" onclick="closePop()">×</button>
-  <img class="popimg" src="assets/booklet-page-1.jpg" alt="Festive Jaanch campaign">
-  <div class="popbody"><div><strong>Festive Health Checkups</strong><span>Explore Jaanch packages & book your test.</span></div><button class="btn secondary" onclick="closePop()">Skip</button><a class="btn primary" href="#packages" onclick="closePop()">View Packages</a></div>
- </div>
+<div class="cartbox" id="cartBox">
+<button class="close" onclick="closeCart()">✕</button>
+<h3>🛒 Your Cart</h3>
+<div id="cartItems"></div>
+<button class="cart" style="width:100%;margin-top:12px" onclick="bookWhatsApp()">Book on WhatsApp</button>
 </div>
+
+<a class="float" href="https://wa.me/918178009011" target="_blank" aria-label="WhatsApp Booking">
+<svg class="wa-logo" viewBox="0 0 32 32" aria-hidden="true">
+<circle cx="16" cy="16" r="15" fill="#25D366"/>
+<path fill="#fff" d="M23.5 8.7A10.5 10.5 0 0 0 6.1 21.3L5 27l5.8-1.5a10.5 10.5 0 0 0 12.7-16.8Zm-7.4 16.1c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.4.9.9-3.3-.2-.3a8.7 8.7 0 1 1 7.8 4.3Zm4.8-6.5c-.3-.2-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.2l-.8 1c-.1.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.2.7.3 1.2.4 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3Z"/>
+</svg>
+<span>WhatsApp Booking</span>
+</a>
+
+<footer class="footer" id="contact">
+TRICITY THYROCARE COLLECTION CENTRE<br>
+PAN INDIA SERVICE AVAILABLE • WhatsApp: 8178009011
+</footer>
+
 <script>
-function closePop(){document.getElementById('popup').style.display='none';}
-document.getElementById('bookingForm').addEventListener('submit',function(e){
- e.preventDefault();
- const n=document.getElementById('name').value, m=document.getElementById('mobile').value, p=document.getElementById('package').value;
- const d=document.getElementById('date').value, t=document.getElementById('time').value, a=document.getElementById('address').value;
- const msg=`New Booking Request%0AName: ${encodeURIComponent(n)}%0AMobile: ${encodeURIComponent(m)}%0ATest/Package: ${encodeURIComponent(p)}%0ADate: ${encodeURIComponent(d)}%0ATime: ${encodeURIComponent(t)}%0AAddress: ${encodeURIComponent(a)}`;
- window.open('https://wa.me/918178009011?text='+msg,'_blank');
-});
+const packages = [
+["Jaanch Thyroid Profile - Basic",5,585],
+["Jaanch Thyroid Profile - Basic Plus",5,1200],
+["Jaanch Thyroid Profile - Advanced",8,2995],
+["Jaanch Cancer Screening Breast And Ovarian",3,1385],
+["Jaanch Cancer Screening Female Basic",6,2140],
+["Jaanch Cancer Screening Female Advanced",37,4275],
+["Jaanch Cancer Screening Male Basic",3,1385],
+["Jaanch Cancer Screening Male Advanced",35,2140],
+["Jaanch Autoimmune Screening Package",34,1799],
+["Jaanch Autoimmune Advanced Package",38,3499],
+["Jaanch Rheumatoid Arthritis Package",38,2099],
+["Jaanch SLE Panel",5,4990],
+["Jaanch Autoimmune Thyroid Screening Panel",6,2645],
+["Jaanch Celiac Disease Screening Panel",35,3925],
+["Jaanch Healthy Mind Package",37,1799],
+["Jaanch Bone And Muscle Health",41,2135],
+["Jaanch STD Profile Basic",12,2940],
+["Jaanch STD Profile Advanced",12,7645],
+["Jaanch STD Profile Extended",14,12350],
+["Jaanch - PCOD (Mini)",50,2350],
+["Jaanch - PCOD Basic",69,5880],
+["Jaanch - PCOD Advanced",73,6740],
+["Jaanch Smoking Impact Package",70,2499],
+["Jaanch Female Hormone Screening",7,1499],
+["Jaanch Male Hormone Screening",6,3599],
+["Jaanch - Mens Hairfall Screening Advanced",47,3495],
+["Jaanch - Womens Hairfall Screening Advanced",51,3530],
+["Jaanch Antenatal Profile - Basic",35,1760],
+["Jaanch Antenatal Profile - Advanced",51,3290],
+["Jaanch Post Delivery Health Check",56,2599],
+["Jaanch Anemia Profile Basic",58,2560],
+["Jaanch Anemia Profile Advanced",70,4595],
+["Jaanch Menopause Assessment Panel",20,3565]
+];
+
+const image="assets/jaanch-promo.jpg";
+let cart=JSON.parse(localStorage.getItem("tricityCart")||"[]");
+
+function render(){
+ document.getElementById("cards").innerHTML=packages.map((p,i)=>`
+ <article class="card">
+  <img src="${image}" alt="${p[0]}">
+  <div class="card-body">
+   <h3>${p[0]}</h3>
+   <div class="tests">${p[1]} Tests</div>
+   <div class="price">₹${p[2].toLocaleString("en-IN")}</div>
+   <div class="actions">
+    <button class="details" onclick="details(${i})">View Details</button>
+    <button class="cart" onclick="add(${i})">Add to Cart</button>
+   </div>
+  </div>
+ </article>`).join("");
+}
+function details(i){
+ const p=packages[i];
+ alert(`${p[0]}\n\nTotal Tests: ${p[1]}\nPrice: ₹${p[2].toLocaleString("en-IN")}`);
+}
+function add(i){
+ cart.push({name:packages[i][0],tests:packages[i][1],price:packages[i][2]});
+ localStorage.setItem("tricityCart",JSON.stringify(cart));
+ showCart();
+}
+function showCart(){
+ document.getElementById("cartBox").style.display="block";
+ document.getElementById("cartItems").innerHTML=cart.length
+ ? cart.map((x,i)=>`<div class="cart-item"><b>${i+1}. ${x.name}</b><br>${x.tests} Tests — ₹${x.price.toLocaleString("en-IN")}</div>`).join("")
+ : "Cart is empty.";
+}
+function closeCart(){document.getElementById("cartBox").style.display="none";}
+function bookWhatsApp(){
+ if(!cart.length)return;
+ let m="TRICITY THYROCARE COLLECTION CENTRE\n\nBOOKING REQUEST\n\n";
+ let total=0;
+ cart.forEach((x,i)=>{m+=`${i+1}. ${x.name} - ₹${x.price}\n`;total+=x.price;});
+ m+=`\nTotal: ₹${total}\n\nPlease share patient name, mobile, address, date and preferred slot.`;
+ window.open("https://wa.me/918178009011?text="+encodeURIComponent(m),"_blank");
+}
+render();
 </script>
 </body>
 </html>
