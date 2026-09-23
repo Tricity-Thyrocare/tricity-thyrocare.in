@@ -1,0 +1,1 @@
+This ZIP contains the website matching the approved demo layout, with booking and WhatsApp flow. No separate design changes were intentionally added.
