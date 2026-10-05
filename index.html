@@ -2,84 +2,86 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Tricity Thyrocare Collection Centre</title>
-<meta name="description" content="Tricity Thyrocare Collection Centre - Blood Tests, Health Packages and Pan India Home Collection.">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Tricity Thyrocare Collection Centre - Tests, health packages and home sample collection.">
+<style>
+:root{--plum:#54263f;--plum2:#743f5c;--green:#2f9b7e;--cream:#fbf7f2;--ink:#261d23;--muted:#746a70;--line:#eadfe4;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{display:flex;align-items:center;gap:10px;color:var(--plum);font-weight:900}.mark{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--plum),var(--green));display:grid;place-items:center;color:#fff;font-size:20px}.logo small{display:block;color:var(--green);font-size:10px;letter-spacing:1px}.navlinks{display:flex;gap:22px;font-size:14px;font-weight:700}.navlinks a:hover{color:var(--green)}.phone{background:var(--plum);color:#fff;padding:11px 17px;border-radius:30px;font-weight:800}.menu{display:none;font-size:25px}
+.hero{padding:60px 0 35px;background:radial-gradient(circle at 75% 30%,#efe0e8,transparent 38%),linear-gradient(#fff,var(--cream))}
+.hero-grid{display:grid;grid-template-columns:1fr .88fr;align-items:center;gap:35px}.badge{display:inline-block;padding:7px 12px;background:#e9f7f2;color:#237c67;border-radius:30px;font-weight:800;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(42px,5vw,66px);line-height:1.04;letter-spacing:-2px;color:var(--plum)}h1 span{color:var(--green)}.hero p{font-size:17px;color:var(--muted);max-width:610px;margin-top:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border:0;border-radius:12px;font-weight:800;cursor:pointer}.primary{background:var(--plum);color:#fff}.green{background:var(--green);color:#fff}.light{background:#fff;color:var(--plum);border:1px solid var(--line)}
+.visual{height:500px;border-radius:30px;background:linear-gradient(145deg,#f0e3e9,#e0efe9);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;box-shadow:0 25px 60px rgba(84,38,63,.14)}
+.visual:after{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:rgba(255,255,255,.48);top:45px;right:20px}
+.visual img{height:96%;max-width:100%;object-fit:contain;object-position:center bottom;position:relative;z-index:2;filter:drop-shadow(0 15px 18px rgba(0,0,0,.16))}
+.search{margin-top:30px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px;display:grid;grid-template-columns:1.7fr 1fr 1fr auto;gap:8px;box-shadow:0 16px 45px rgba(84,38,63,.1)}.search input,.search select{border:0;background:#faf7f9;padding:14px;border-radius:10px;outline:0}.search button{border:0;border-radius:10px;background:var(--green);color:#fff;font-weight:900;padding:0 22px}
+.quick{padding:25px 0}.quickgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.quickcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;font-weight:800;color:var(--plum);box-shadow:0 8px 24px rgba(84,38,63,.05)}.quickcard b{display:block;font-size:22px;margin-bottom:5px}
+section{padding:65px 0}.head{margin-bottom:26px}.head h2{font-size:35px;color:var(--plum)}.head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:21px}.tag{display:inline-block;background:#e9f7f2;color:#227c67;border-radius:20px;padding:5px 9px;font-size:11px;font-weight:900}.card h3{color:var(--plum);margin:13px 0 6px;font-size:19px}.card p{font-size:13px;color:var(--muted)}.price{margin:16px 0;display:flex;gap:9px;align-items:center}.price strong{font-size:25px;color:var(--green)}.price del{font-size:13px;color:#999}.card .btn{width:100%}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.cat{padding:25px;border:1px solid var(--line);background:linear-gradient(145deg,#fff,#f4e9ef);border-radius:18px}.cat h3{color:var(--plum)}.cat p{font-size:13px;color:var(--muted)}
+.dark{background:var(--plum);border-radius:28px;padding:42px;color:#fff}.darkgrid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.dark h2{font-size:38px;line-height:1.1}.dark p{color:#eadde5;margin-top:12px}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.benefit{background:rgba(255,255,255,.1);padding:18px;border-radius:14px}
+.offer{background:linear-gradient(135deg,#f0e0e8,#e0f1eb);border-radius:28px;padding:40px}.offergrid{display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center}.offer h2{font-size:38px;color:var(--plum);line-height:1.1}.offer p{color:var(--muted);margin-top:10px}.offer-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.offer-card{background:#fff;padding:20px;border-radius:18px}.offer-card strong{font-size:26px;color:var(--green);display:block;margin-top:4px}
+footer{background:#291a23;color:#fff;padding:45px 0 22px}.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:25px}.foot p,.foot a{color:#cdbfc7;font-size:14px;display:block;margin:7px 0}.copy{border-top:1px solid #493943;margin-top:28px;padding-top:18px;color:#a99aa3;font-size:12px}.float{position:fixed;right:17px;bottom:17px;z-index:90;display:flex;flex-direction:column;gap:9px}.float a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 8px 20px #0003}.wa{background:#25d366}.call{background:var(--plum)}
+.modal{display:none;position:fixed;inset:0;background:#160d14aa;z-index:200;padding:20px}.modalbox{max-width:520px;background:#fff;margin:7vh auto;padding:26px;border-radius:22px;position:relative}.close{position:absolute;right:17px;top:10px;border:0;background:none;font-size:27px}.form{display:grid;gap:11px;margin-top:18px}.form input,.form select{padding:13px;border:1px solid var(--line);border-radius:10px}
+@media(max-width:900px){.navlinks{display:none}.menu{display:block}.phone{display:none}.hero-grid,.darkgrid,.offergrid{grid-template-columns:1fr}.search{grid-template-columns:1fr 1fr}.search button{padding:13px}.quickgrid{grid-template-columns:repeat(2,1fr)}.cards,.categories{grid-template-columns:repeat(2,1fr)}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){h1{font-size:43px}.hero{padding-top:40px}.visual{height:400px}.search{grid-template-columns:1fr}.quickgrid,.cards,.categories,.benefits,.offer-cards,.foot{grid-template-columns:1fr}section{padding:50px 0}.dark h2,.offer h2{font-size:31px}}
+</style>
 </head>
 <body>
-<header>
-  <div class="top">🧪 Authorised Collection Centre &nbsp; | &nbsp; Pan India Service Available</div>
-  <nav class="nav">
-    <a class="brand" href="#"><span class="brandmark">T</span><span><b>TRICITY</b><small>THYROCARE COLLECTION CENTRE</small></span></a>
-    <div class="links">
-      <a href="#home">Home</a><a href="#tests">Tests</a><a href="#packages">Health Packages</a><a href="#home-collection">Home Collection</a>
-    </div>
-    <a class="whatsapp" href="https://wa.me/918178009011?text=Hello%20Tricity%20Thyrocare%20Collection%20Centre%2C%20I%20want%20to%20book%20a%20test." target="_blank">☘ WhatsApp</a>
-  </nav>
-</header>
+<header><div class="container nav">
+<a class="logo" href="#"><div class="mark">✚</div><div>Tricity Thyrocare<small>COLLECTION CENTRE</small></div></a>
+<nav class="navlinks"><a href="#home">Home</a><a href="#packages">Tests & Packages</a><a href="#collection">Home Collection</a><a href="#offers">Offers</a><a href="#contact">Contact</a></nav>
+<a class="phone" href="tel:8178009011">☎ 8178009011</a><div class="menu">☰</div>
+</div></header>
 
 <main id="home">
-<section class="hero">
-  <div class="heroText">
-    <div class="pill">ASSOCIATE WITH THYROCARE</div>
-    <h1>Healthcare testing made <span>simple.</span></h1>
-    <p>Book blood tests, health packages and convenient home sample collection with Tricity Thyrocare Collection Centre.</p>
-    <div class="actions"><a class="primary" href="#booking">Book a Test</a><a class="secondary" href="#packages">View Packages</a></div>
-    <div class="trust"><span>✓ Home Collection</span><span>✓ Trusted Lab Testing</span><span>✓ Pan India Service</span></div>
-  </div>
-  <div class="heroCard">
-    <div class="cardTop">HOME SAMPLE COLLECTION</div>
-    <div class="house">⌂</div>
-    <h3>Book from home</h3>
-    <p>Choose your date and preferred time slot.</p>
-    <a href="#booking" class="cardBtn">Book Home Collection →</a>
-  </div>
-</section>
+<section class="hero"><div class="container">
+<div class="hero-grid">
+<div><div class="badge">✓ Trusted Diagnostic Services</div><h1>Your Health.<br><span>Our Priority.</span></h1><p>Book diagnostic tests and health packages with convenient home sample collection and easy WhatsApp booking.</p>
+<div class="actions"><a class="btn primary" href="#packages">Explore Packages</a><a class="btn green" href="https://wa.me/918178009011?text=Hello%20Tricity%20Thyrocare,%20I%20want%20to%20book%20a%20test." target="_blank">WhatsApp Booking</a></div></div>
+<div class="visual"><img src="hero-woman.png" alt="Tricity Thyrocare promotional model"></div>
+</div>
+<div class="search"><input id="searchInput" placeholder="Search tests, packages or health checkups"><select><option>Select City</option><option>Chandigarh</option><option>Mohali</option><option>Zirakpur</option><option>Panchkula</option><option>Delhi</option></select><select><option>Test Type</option><option>Full Body</option><option>Thyroid</option><option>Diabetes</option><option>Women's Health</option></select><button onclick="searchPkg()">Search</button></div>
+</div></section>
 
-<section class="searchWrap">
-  <h2>Find a test or health package</h2>
-  <p>Search tests and compare patient-wise pricing.</p>
-  <div class="search"><span>⌕</span><input id="search" placeholder="Search CBC, LFT, TFT, HbA1c, Vitamin D..."><button onclick="filterTests()">Search</button></div>
-  <div class="quick"><button onclick="showAll()">All Tests</button><button onclick="quick('Full Body')">Full Body</button><button onclick="quick('Vitamin')">Vitamin</button><button onclick="quick('Thyroid')">Thyroid</button><button onclick="quick('Diabetes')">Diabetes</button></div>
-</section>
+<div class="quick"><div class="container quickgrid">
+<a class="quickcard" href="#packages"><b>🧪</b>Book Tests & Packages</a><a class="quickcard" href="#collection"><b>🏠</b>Home Sample Collection</a><a class="quickcard" href="#contact"><b>📄</b>Online Reports</a><a class="quickcard" href="#packages"><b>📅</b>Book Appointment</a><a class="quickcard" href="tel:8178009011"><b>📞</b>Contact Centre</a>
+</div></div>
 
-<section id="tests" class="section">
-  <div class="sectionHead"><div><span class="eyebrow">POPULAR TESTS</span><h2>Tests at your fingertips</h2></div></div>
-  <div id="testGrid" class="grid"></div>
-</section>
+<section id="packages"><div class="container"><div class="head"><h2>Popular Health Packages</h2><p>Premium-looking package cards with clear offer pricing and quick booking.</p></div>
+<div class="cards" id="pkggrid">
+<div class="card pkg" data-key="full body checkup"><span class="tag">POPULAR</span><h3>Full Body Checkup</h3><p>Essential preventive health screening.</p><div class="price"><strong>₹1,399</strong><del>₹3,299</del></div><button class="btn primary" onclick="openBook('Full Body Checkup','₹1,399')">Book Now</button></div>
+<div class="card pkg" data-key="cardiac profile heart"><span class="tag">HEART CARE</span><h3>Cardiac Profile</h3><p>Selected markers for cardiovascular assessment.</p><div class="price"><strong>₹1,099</strong><del>₹2,499</del></div><button class="btn primary" onclick="openBook('Cardiac Profile','₹1,099')">Book Now</button></div>
+<div class="card pkg" data-key="thyroid profile thyroid"><span class="tag">THYROID</span><h3>Thyroid Profile</h3><p>Routine thyroid screening profile.</p><div class="price"><strong>₹699</strong><del>₹1,299</del></div><button class="btn primary" onclick="openBook('Thyroid Profile','₹699')">Book Now</button></div>
+<div class="card pkg" data-key="vitamin immunity"><span class="tag">WELLNESS</span><h3>Vitamin & Immunity</h3><p>Selected vitamin and wellness markers.</p><div class="price"><strong>₹999</strong><del>₹1,999</del></div><button class="btn primary" onclick="openBook('Vitamin & Immunity','₹999')">Book Now</button></div>
+</div></div></section>
 
-<section id="packages" class="section light">
-  <div class="sectionHead"><div><span class="eyebrow">HEALTH PACKAGES</span><h2>Popular health packages</h2></div></div>
-  <div class="packageGrid">
-    <article class="package"><div class="icon">♥</div><h3>Complete Health Checkup</h3><p>Essential tests for a complete health overview.</p><strong>From ₹1,599</strong><button onclick="selectPackage('Complete Health Checkup')">Book Now</button></article>
-    <article class="package"><div class="icon">◉</div><h3>Complete Health + Vitamins</h3><p>Health screening with important vitamin tests.</p><strong>From ₹2,800</strong><button onclick="selectPackage('Complete Health + Vitamins')">Book Now</button></article>
-    <article class="package"><div class="icon">⌁</div><h3>PCOD Health Package</h3><p>Useful screening panel for PCOD-related evaluation.</p><strong>From ₹4,200</strong><button onclick="selectPackage('PCOD Health Package')">Book Now</button></article>
-  </div>
-</section>
+<section><div class="container"><div class="head"><h2>Explore By Category</h2><p>Quick access to common diagnostic needs.</p></div><div class="categories"><div class="cat"><h3>🩺 Full Body</h3><p>Preventive health screening.</p></div><div class="cat"><h3>🦋 Thyroid</h3><p>Thyroid hormone testing.</p></div><div class="cat"><h3>🩸 Diabetes</h3><p>Diabetes monitoring profiles.</p></div><div class="cat"><h3>🌸 Women's Health</h3><p>Women's health profiles.</p></div></div></div></section>
 
-<section id="home-collection" class="homeBanner">
-  <div><span class="eyebrow">HOME COLLECTION</span><h2>Sample collection at your doorstep</h2><p>Convenient appointment slots with home sample collection.</p></div>
-  <a href="#booking" class="primary">Schedule Collection</a>
-</section>
+<section id="collection"><div class="container"><div class="dark"><div class="darkgrid"><div><h2>Diagnostic Testing at Your Doorstep</h2><p>Schedule convenient home sample collection through WhatsApp or phone.</p><div class="actions"><a class="btn green" href="https://wa.me/918178009011?text=Hello%20Tricity%20Thyrocare,%20I%20want%20home%20sample%20collection." target="_blank">Book Home Collection</a><a class="btn light" href="tel:8178009011">Call 8178009011</a></div></div><div class="benefits"><div class="benefit"><b>🏠 Free Home Collection</b></div><div class="benefit"><b>⚡ Fast Reports</b></div><div class="benefit"><b>🌐 Pan India Service</b></div></div></div></div></div></section>
 
-<section id="booking" class="booking section">
-  <div><span class="eyebrow">BOOK APPOINTMENT</span><h2>Book your test</h2>
-  <p class="muted">Fill your details. We will confirm your appointment on WhatsApp.</p>
-  <form id="bookingForm">
-    <input id="name" required placeholder="Full Name">
-    <input id="mobile" required pattern="[0-9]{10}" placeholder="Mobile Number">
-    <input id="address" required placeholder="Address">
-    <input id="pincode" required pattern="[0-9]{6}" placeholder="Pincode">
-    <select id="test"><option value="">Select Test / Package</option></select>
-    <input id="date" required type="date">
-    <select id="time" required><option value="">Select Time Slot</option><option>6:00 AM - 8:00 AM</option><option>8:00 AM - 10:00 AM</option><option>10:00 AM - 12:00 PM</option><option>12:00 PM - 2:00 PM</option></select>
-    <button class="primary full" type="submit">Confirm on WhatsApp</button>
-  </form>
-</section>
+<section id="offers"><div class="container"><div class="offer"><div class="offergrid"><div><span class="tag">SPECIAL OFFER</span><h2 style="margin-top:12px">Aarogyam Camp<br>Profile Offers</h2><p>Special health checkup packages at your doorstep.</p><p style="font-weight:800;color:var(--plum)">10–12 hours of fasting is essential.</p></div><div class="offer-cards">
+<div class="offer-card"><h3>Aarogyam Full Body Camp 1</h3><p>MRP <del>₹1,999</del></p><strong>₹1,299</strong><button class="btn primary" style="width:100%;margin-top:10px" onclick="openBook('Aarogyam Full Body Camp 1','₹1,299')">Book Now</button></div>
+<div class="offer-card"><h3>Aarogyam Full Body Camp 2</h3><p>MRP <del>₹2,999</del></p><strong>₹1,499</strong><button class="btn primary" style="width:100%;margin-top:10px" onclick="openBook('Aarogyam Full Body Camp 2','₹1,499')">Book Now</button></div>
+</div></div></div></div></section>
+
+<section><div class="container"><div class="head"><h2>Why Choose Tricity Thyrocare?</h2><p>Simple booking, doorstep convenience and professional support.</p></div><div class="cards"><div class="card"><h3>Professional Service</h3><p>Customer-focused support from booking to report delivery.</p></div><div class="card"><h3>Home Collection</h3><p>Convenient sample collection at home, subject to availability.</p></div><div class="card"><h3>Easy WhatsApp Booking</h3><p>Send your requirement directly to our team.</p></div><div class="card"><h3>Pan India Service</h3><p>Pan India service available for supported requirements.</p></div></div></div></section>
 </main>
 
-<footer><div><b>TRICITY THYROCARE COLLECTION CENTRE</b><p>Blood Tests • Health Packages • Home Collection</p></div><div><b>Contact</b><p>📞 8178009011</p><p>Pan India Home Collection Available</p></div></footer>
-<script src="script.js"></script>
-</body>
-</html>
+<footer id="contact"><div class="container"><div class="foot"><div><h3>Tricity Thyrocare</h3><p>Collection Centre</p><p>Trusted diagnostic services with convenient home collection.</p></div><div><h3>Quick Links</h3><a href="#packages">Tests & Packages</a><a href="#collection">Home Collection</a><a href="#offers">Offers</a></div><div><h3>Contact</h3><a href="tel:8178009011">8178009011</a><a href="https://wa.me/918178009011" target="_blank">WhatsApp</a><p>Pan India Service Available</p></div><div><h3>Booking</h3><a href="https://wa.me/918178009011" target="_blank">Book on WhatsApp</a><a href="tel:8178009011">Call Now</a></div></div><div class="copy">© 2026 Tricity Thyrocare Collection Centre. All rights reserved.</div></div></footer>
+<div class="float"><a class="wa" href="https://wa.me/918178009011" target="_blank">WA</a><a class="call" href="tel:8178009011">☎</a></div>
+
+<div class="modal" id="modal"><div class="modalbox"><button class="close" onclick="closeBook()">×</button><h2 style="color:var(--plum)">Book Your Test</h2><p id="selected" style="color:var(--muted)"></p><form class="form" onsubmit="sendBook(event)"><input id="name" required placeholder="Patient Name"><input id="mobile" required pattern="[0-9]{10}" placeholder="Mobile Number"><input id="area" required placeholder="City / Area"><input id="date" required type="date"><select id="time" required><option value="">Preferred Time</option><option>Morning 7 AM - 10 AM</option><option>Morning 10 AM - 1 PM</option><option>Afternoon 1 PM - 4 PM</option><option>Evening 4 PM - 7 PM</option></select><button class="btn green">Continue on WhatsApp</button></form></div></div>
+<script>
+let pack='',price='';
+function openBook(a,b){pack=a;price=b;document.getElementById('selected').textContent=a+' — '+b;document.getElementById('modal').style.display='block'}
+function closeBook(){document.getElementById('modal').style.display='none'}
+function sendBook(e){e.preventDefault();let m=`Hello Tricity Thyrocare, I want to book a test.%0A%0APackage: ${pack}%0APrice: ${price}%0APatient: ${name.value}%0AMobile: ${mobile.value}%0ACity/Area: ${area.value}%0ADate: ${date.value}%0ATime: ${time.value}`;window.open('https://wa.me/918178009011?text='+m,'_blank')}
+function searchPkg(){let q=searchInput.value.toLowerCase();document.querySelectorAll('.pkg').forEach(x=>x.style.display=!q||x.dataset.key.includes(q)?'block':'none');document.getElementById('packages').scrollIntoView({behavior:'smooth'})}
+</script>
+</body></html>
