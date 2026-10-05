@@ -1,36 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tricity Thyrocare Collection Centre</title>
-<style>
-:root{--navy:#132849;--plum:#64143f;--green:#159477;--ink:#20232b;--muted:#6d7078;--line:#ece9ed}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}a{text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-nav{min-height:84px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:11px;color:var(--navy)}.logo-box{width:56px;height:56px;border-radius:16px;overflow:hidden;background:var(--navy);display:grid;place-items:center;box-shadow:0 8px 20px #13284924}.logo-box img{width:100%;height:100%;object-fit:cover}
-.brand-name{font-size:22px;line-height:1.05;font-weight:800;letter-spacing:-.5px}.brand-name span{color:var(--plum)}.brand-sub{display:block;color:var(--green);font-size:9px;font-weight:800;letter-spacing:2.3px;margin-top:6px}.links{display:flex;gap:25px;font-weight:700}.links a{color:#41434a}.hamb{display:none;font-size:29px;color:var(--plum)}
-.hero{padding:58px 0 70px;background:radial-gradient(circle at 86% 17%,#f9e9f2 0 13%,transparent 14%),linear-gradient(135deg,#fff 0%,#fff7fa 62%,#effaf6 100%)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
-.badge{display:inline-flex;padding:11px 16px;border-radius:30px;background:#e8f6f2;color:#147460;font-weight:800;font-size:14px}h1{font-size:clamp(48px,6vw,78px);line-height:.98;letter-spacing:-3.2px;margin:24px 0 20px}h1 .one{color:var(--plum)}h1 .two{color:var(--green)}.hero p{font-size:19px;line-height:1.65;color:var(--muted);max-width:640px}
-.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:16px 22px;border-radius:15px;font-weight:800;font-size:16px}.primary{background:var(--plum);color:#fff;box-shadow:0 12px 25px #64143f25}.secondary{border:2px solid var(--green);color:var(--green);background:#fff}.wa-icon{width:23px;height:23px;object-fit:contain}
-.visual{min-height:430px;display:grid;place-items:center;position:relative}.visual:before{content:"";position:absolute;width:90%;aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#e7f7f1,#fff0f7)}.visual img{position:relative;width:94%;max-width:500px;border-radius:35px;z-index:1;box-shadow:0 22px 45px #13284918}
-.features{padding:46px 0}.features-grid{display:grid;grid-template-columns:repeat(4,1fr)}.feature{text-align:center;padding:20px;border-right:1px solid var(--line)}.feature:last-child{border:0}.icon{font-size:29px;margin-bottom:11px}.feature h3{margin:0;font-size:17px}.feature p{color:var(--muted);font-size:14px}
-.promo{padding:20px 0 65px}.promo-card{padding:40px;border-radius:28px;background:linear-gradient(120deg,#f5fbf8,#fff2f8);border:1px solid #e8ecea}.promo-card h2{font-size:50px;line-height:1.05;margin:18px 0 10px;color:var(--plum)}.promo-card h2 span{color:var(--green)}.checks{display:flex;gap:20px;flex-wrap:wrap;font-weight:700;color:#277967}.india{display:inline-block;margin-top:22px;padding:14px 22px;background:var(--plum);color:#fff;border-radius:13px;font-weight:800}
-.packages{padding:10px 0 80px}.title{text-align:center}.title h2{font-size:42px;color:var(--plum)}.title span{color:var(--green)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:25px;border:1px solid var(--line);border-radius:22px;box-shadow:0 10px 30px #00000009}.card h3{color:var(--plum)}.price{font-size:28px;color:var(--green);font-weight:800}.card button{width:100%;padding:13px;border:0;border-radius:11px;background:var(--plum);color:#fff;font-weight:800}
-.float{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:12px;z-index:60}.float a{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 25px #0002}.float .wa{background:#fff}.float .call{background:var(--plum);color:#fff;font-size:24px}.wa-float-icon{width:39px;height:39px;object-fit:contain}
-@media(max-width:800px){.links{display:none}.hamb{display:block}.grid{grid-template-columns:1fr}.hero{padding:45px 0}.visual{min-height:300px}.features-grid{grid-template-columns:repeat(2,1fr)}.feature:nth-child(2){border:0}.cards{grid-template-columns:1fr}.promo-card{padding:28px}.promo-card h2{font-size:38px}h1{font-size:50px}.brand-name{font-size:19px}.brand-sub{font-size:8px}.logo-box{width:52px;height:52px}}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tricity Thyrocare Collection Centre | Diagnostic Tests & Home Collection</title>
+<meta name="description" content="Tricity Thyrocare Collection Centre – book diagnostic tests, health packages and free home sample collection. Pan India service available.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><div class="wrap"><nav>
-<a class="brand" href="#"><div class="logo-box"><img src="brand-mark.png" alt="Microscope and health logo"></div><div><div class="brand-name"><span>Tricity</span> Thyrocare</div><small class="brand-sub">COLLECTION CENTRE</small></div></a>
-<div class="links"><a href="#packages">Packages</a><a href="#services">Services</a><a href="https://wa.me/918178009011">WhatsApp</a></div><div class="hamb">☰</div>
-</nav></div></header>
-<section class="hero"><div class="wrap grid"><div><div class="badge">✓ Trusted Diagnostic Services</div><h1><span class="one">Your Health.</span><br><span class="two">Our Priority.</span></h1><p>Book diagnostic tests and health packages with convenient home sample collection and easy WhatsApp booking.</p><div class="buttons"><a class="btn primary" href="#packages">Explore Packages →</a><a class="btn secondary" href="https://wa.me/918178009011"><img class="wa-icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/WhatsApp_Logo_green.svg" alt="WhatsApp logo">WhatsApp Booking →</a></div></div><div class="visual"><img src="hero-family.png" alt="Tricity Thyrocare promotional image"></div></div></section>
-<section class="features" id="services"><div class="wrap features-grid"><div class="feature"><div class="icon">🧪</div><h3>Accurate Results</h3><p>Reliable diagnostic testing</p></div><div class="feature"><div class="icon">⌂</div><h3>Free Home Collection</h3><p>Sample pickup at doorstep</p></div><div class="feature"><div class="icon">◷</div><h3>On Time Service</h3><p>Convenient service</p></div><div class="feature"><div class="icon">✓</div><h3>Trusted & Certified</h3><p>Professional care</p></div></div></section>
-<section class="promo"><div class="wrap"><div class="promo-card"><strong style="color:var(--plum);font-size:20px">Tricity Thyrocare</strong><h2>Comprehensive <span>Health Checkups</span></h2><div class="checks"><span>✓ Full Body Packages</span><span>✓ Specialized Profiles</span><span>✓ FIT & Wellness Tests</span></div><div class="india">Pan India Service Available</div></div></div></section>
-<section class="packages" id="packages"><div class="wrap"><div class="title"><h2>Popular <span>Health Packages</span></h2><p>Choose a package and book home sample collection.</p></div><div class="cards"><div class="card"><h3>Aarogyam Full Body Camp 1</h3><p>Comprehensive health screening package.</p><div class="price">₹1299</div><p>10–12 hours fasting recommended.</p><button onclick="book('Aarogyam Full Body Camp 1')">Book Now</button></div><div class="card"><h3>Aarogyam Full Body Camp 2</h3><p>Extended full body health screening.</p><div class="price">₹1499</div><p>10–12 hours fasting recommended.</p><button onclick="book('Aarogyam Full Body Camp 2')">Book Now</button></div><div class="card"><h3>Custom Health Checkup</h3><p>Ask our team for a suitable profile.</p><div class="price">Enquire</div><p>Home sample collection available.</p><button onclick="book('Custom Health Checkup')">Enquire Now</button></div></div></div></section>
-<div class="float"><a class="wa" href="https://wa.me/918178009011" aria-label="WhatsApp"><img class="wa-float-icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/WhatsApp_Logo_green.svg" alt="WhatsApp"></a><a class="call" href="tel:+918178009011" aria-label="Call">☎</a></div>
-<script>function book(n){window.open('https://wa.me/918178009011?text='+encodeURIComponent('Hello Tricity Thyrocare, I want to book: '+n),'_blank')}</script>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <div class="brand-mark">T</div>
+      <div><strong>Tricity</strong><span>Thyrocare Collection Centre</span></div>
+    </a>
+    <button class="menu" aria-label="Menu">☰</button>
+    <nav>
+      <a href="#home">Home</a><a href="#packages">Packages</a><a href="#services">Services</a>
+      <a href="#about">About</a><a href="#contact">Contact</a>
+      <a class="nav-btn" href="tel:8178009011">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">TRUSTED DIAGNOSTIC SERVICES</div>
+      <h1>Better health starts with the <em>right test.</em></h1>
+      <p>Book blood tests and health packages with convenient sample collection at your doorstep.</p>
+      <div class="hero-actions">
+        <button class="primary" onclick="openBooking()">Book Your Test <span>→</span></button>
+        <a class="secondary" href="https://wa.me/918178009011?text=Hello%20Tricity%20Thyrocare%2C%20I%20want%20to%20book%20a%20test." target="_blank">WhatsApp Us</a>
+      </div>
+      <div class="trust-row"><span>✓ Free Home Collection</span><span>✓ Pan India Service</span><span>✓ Reliable Reports</span></div>
+    </div>
+    <div class="hero-card">
+      <div class="orb orb1"></div><div class="orb orb2"></div>
+      <div class="doctor-card">
+        <div class="person">✚</div>
+        <div><b>Diagnostic Care</b><small>At your doorstep</small></div>
+      </div>
+      <div class="test-card"><span>HEALTH CHECK</span><strong>Complete Wellness</strong><small>Convenient • Professional • Trusted</small></div>
+      <div class="floating"><b>24×7</b><span>Booking Support</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+ <div class="container stats-grid">
+  <div><b>100+</b><span>Diagnostic Tests</span></div>
+  <div><b>Free</b><span>Home Collection*</span></div>
+  <div><b>Pan India</b><span>Service Available</span></div>
+  <div><b>Easy</b><span>Online Booking</span></div>
+ </div>
+</section>
+
+<section id="packages" class="section">
+ <div class="container">
+  <div class="section-head"><div><span class="eyebrow">POPULAR HEALTH PACKAGES</span><h2>Choose a package for your health</h2></div><button class="outline" onclick="openBooking()">Book a Package</button></div>
+  <div class="cards">
+   <article class="package featured"><span class="tag">POPULAR</span><h3>Aarogyam Full Body Camp 1</h3><p>Comprehensive health screening for everyday wellness.</p><div class="price"><del>₹1,999</del><strong>₹1,299</strong></div><button onclick="book('Aarogyam Full Body Camp 1')">Book Now →</button></article>
+   <article class="package"><h3>Aarogyam Full Body Camp 2</h3><p>Extended preventive health screening with essential profiles.</p><div class="price"><del>₹2,999</del><strong>₹1,499</strong></div><button onclick="book('Aarogyam Full Body Camp 2')">Book Now →</button></article>
+   <article class="package"><h3>Custom Health Check</h3><p>Select individual tests or ask our team for the right package.</p><div class="price"><strong>Get Quote</strong></div><button onclick="openBooking()">Enquire Now →</button></article>
+  </div>
+  <p class="note">*Package prices and test availability may vary by location. Please confirm at booking.</p>
+ </div>
+</section>
+
+<section id="services" class="section soft">
+ <div class="container">
+  <div class="section-head centered"><div><span class="eyebrow">OUR SERVICES</span><h2>Healthcare made simple</h2><p>From booking to sample collection, we keep the process convenient.</p></div></div>
+  <div class="service-grid">
+   <div class="service"><div class="icon">⌂</div><h3>Home Sample Collection</h3><p>Schedule a convenient blood sample collection from your home.</p></div>
+   <div class="service"><div class="icon">▣</div><h3>Health Packages</h3><p>Preventive and full-body packages for different health needs.</p></div>
+   <div class="service"><div class="icon">✓</div><h3>Diagnostic Testing</h3><p>Book routine and specialized diagnostic tests through our centre.</p></div>
+   <div class="service"><div class="icon">◎</div><h3>Pan India Service</h3><p>Service availability across India through the diagnostic network.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="about" class="about">
+ <div class="container about-grid">
+  <div class="about-art"><div class="seal">TRICITY<br><b>CARE</b></div></div>
+  <div><span class="eyebrow">ABOUT TRICITY THYROCARE</span><h2>Professional diagnostics, designed around you.</h2>
+   <p>Tricity Thyrocare Collection Centre helps you access diagnostic testing with an easy booking process and convenient home collection.</p>
+   <ul><li>Simple appointment booking</li><li>Convenient sample collection</li><li>Health packages for preventive screening</li><li>Dedicated booking support</li></ul>
+   <button class="primary" onclick="openBooking()">Book Your Appointment</button>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact section">
+ <div class="container contact-box">
+  <div><span class="eyebrow">NEED HELP?</span><h2>Talk to our booking team</h2><p>Call or WhatsApp us to book a test or ask about a package.</p></div>
+  <div class="contact-actions"><a class="primary" href="tel:8178009011">8178009011</a><a class="whatsapp" href="https://wa.me/918178009011?text=Hello%20Tricity%20Thyrocare" target="_blank">WhatsApp</a></div>
+ </div>
+</section>
+</main>
+
+<footer><div class="container footer"><div><b>Tricity Thyrocare Collection Centre</b><p>Diagnostic testing • Home Collection • Pan India Service</p></div><div>© 2026 Tricity Thyrocare Collection Centre</div></div></footer>
+
+<div class="modal" id="modal">
+ <div class="modal-card"><button class="close" onclick="closeBooking()">×</button><span class="eyebrow">BOOK YOUR TEST</span><h2>Schedule a collection</h2>
+ <form onsubmit="submitBooking(event)">
+  <input id="name" required placeholder="Full Name"><input id="phone" required pattern="[0-9]{10}" placeholder="Mobile Number"><select id="package"><option value="">Select Test / Package</option><option>Aarogyam Full Body Camp 1</option><option>Aarogyam Full Body Camp 2</option><option>Custom Health Check</option></select><input id="date" type="date"><button class="primary" type="submit">Continue on WhatsApp →</button>
+ </form><small>Your details will be opened in WhatsApp for confirmation.</small>
+ </div>
+</div>
+<a class="wa-float" href="https://wa.me/918178009011?text=Hello%20Tricity%20Thyrocare%2C%20I%20want%20to%20book%20a%20test." target="_blank" aria-label="WhatsApp">◔</a>
+<script src="script.js"></script>
 </body></html>
