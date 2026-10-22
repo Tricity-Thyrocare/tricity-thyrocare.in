@@ -1,2 +1,1 @@
-Tricity Thyrocare Collection Centre — updated website files.
-Upload index.html to your website root, replacing the old index.html. The logo and styling are embedded in the single HTML file.
+Tricity Thyrocare Collection Centre updated website. Upload index.html and replace the existing index.html in your GitHub repository. The logo background has been made transparent and recolored to fit the pastel website header. WhatsApp icon is included.
