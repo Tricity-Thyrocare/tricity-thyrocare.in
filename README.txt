@@ -1,3 +1,2 @@
-Tricity Thyrocare Collection Centre - updated mobile layout
-Upload index.html to your website repository root (replace the existing index.html).
-This version enlarges the Thyrocare logo, reduces the header brand text, and removes the floating slogan from the Madhuri Dixit photo area.
+Tricity Thyrocare Collection Centre — updated website files.
+Upload index.html to your website root, replacing the old index.html. The logo and styling are embedded in the single HTML file.
