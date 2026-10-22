@@ -1,3 +1,3 @@
-FIXED SINGLE-FILE WEBSITE
-
-Upload index.html to the root folder of your website hosting (replace the old index.html). This file includes its CSS, JavaScript, logo and hero image, so separate assets/style/script files are not required. Keep a backup of your existing site before replacing files.
+Tricity Thyrocare Collection Centre - updated mobile layout
+Upload index.html to your website repository root (replace the existing index.html).
+This version enlarges the Thyrocare logo, reduces the header brand text, and removes the floating slogan from the Madhuri Dixit photo area.
