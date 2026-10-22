@@ -1,22 +1,15 @@
-TRICITY THYROCARE COLLECTION CENTRE — WEBSITE DEMO
+TRICITY THYROCARE COLLECTION CENTRE WEBSITE
 
 Files:
-- index.html: responsive website structure
-- style.css: colors, layout, responsive design
-- script.js: package search and WhatsApp booking form
-- assets/thyrocare-logo-reference.jpg: logo area cropped from your supplied design screenshot
+- index.html: homepage
+- style.css: responsive design
+- script.js: menu, package search and WhatsApp booking
+- assets/: logo and supplied reference photos
 
-How to preview:
-1. Extract this ZIP file.
-2. Open index.html in Chrome.
-3. Internet is required for the external doctor photos and Google Fonts.
+To preview: open index.html in a browser.
+To publish on GitHub Pages: upload the CONTENTS of this folder to the root of your repository. Keep index.html, style.css, script.js, and the assets folder together.
 
-How to publish on GitHub Pages:
-1. Upload all files and the assets folder to the root of your repository.
-2. In GitHub, open Settings > Pages.
-3. Choose Deploy from a branch, select main and /(root), then Save.
+Contact configured in the site: 8178009011
+WhatsApp booking opens a message to this number.
 
-Notes:
-- The booking form opens WhatsApp to 8178009011 with the selected package and booking details.
-- Package names/prices are sample display content; verify them before publishing.
-- This is a front-end demo, not a connected diagnostic booking or payment system.
+Note: Prices and test counts are sample display content based on the design reference. Confirm actual prices and package contents before publishing.

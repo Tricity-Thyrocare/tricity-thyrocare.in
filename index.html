@@ -1,147 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123b70">
-  <title>Tricity Thyrocare Collection Centre</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#112748">
+<title>Tricity Thyrocare Collection Centre | Health today. Brighter tomorrow.</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topbar">
-    <div class="top-left"><span>🛡 Trusted by Millions</span><i></i><span>▤ Accurate Reports</span><i></i><a href="tel:8178009011">☎ Call Us <b>8178009011</b></a></div>
-    <div class="top-right"><a class="whatsapp-mini" href="https://wa.me/918178009011" target="_blank" rel="noreferrer">◉ Chat on WhatsApp</a><i></i><span>♙ Login / Register</span></div>
-  </div>
-  <header class="navbar">
-    <a class="brand" href="#">
-      <img src="assets/thyrocare-logo-reference.jpg" alt="Thyrocare logo reference">
-      <span class="brand-divider"></span>
-      <span class="brand-tag">Health today.<br><b>Brighter tomorrow.</b></span>
-    </a>
-    <nav>
-      <a class="active" href="#">Home</a>
-      <a href="#packages">Tests &amp; Packages⌄</a>
-      <a href="#why">About Us</a>
-      <a href="#home-collection">Home Collection</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="nav-icons"><button aria-label="Search" id="searchFocus">⌕</button><button aria-label="Cart">🛒<sup>0</sup></button><button aria-label="Menu" id="menuToggle">☰</button></div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">WELCOME TO</p>
-        <h1>Tricity Thyrocare<br><span>Collection Centre</span></h1>
-        <h2>Your Health, Our Priority</h2>
-        <div class="tiny-underline"></div>
-        <p class="intro">Book your health checkup, select a package, choose your convenient date and time, and send your booking details directly on WhatsApp.</p>
-        <form class="searchbar" id="searchForm">
-          <span>⌕</span><input id="testSearch" type="search" placeholder="Search for Tests, Packages or Health Checkups" aria-label="Search tests and packages">
-          <button type="submit">Search →</button>
-        </form>
-        <p class="search-note" id="searchNote" aria-live="polite"></p>
-      </div>
-      <div class="doctor-area">
-        <div class="leaf-orb"></div>
-        <img class="doctor" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=850&q=85" alt="Smiling female doctor">
-        <div class="script-note">Because<br>your health<br>matters <span>♡</span></div>
-      </div>
-      <div class="offer-card">
-        <span class="offer-pill">Special Offer</span>
-        <h3>Full Body<br>Checkup</h3>
-        <p>Complete Health Screening<br>for a Healthier You</p>
-        <div class="price-old">₹1800</div>
-        <div class="price-row"><strong>₹1200</strong><span>33%<small>OFF</small></span></div>
-        <a class="button dark-button book-link" href="#packages" data-package="Full Body Checkup">Book Now →</a>
-      </div>
-      <aside class="hero-benefits">
-        <div><span class="benefit-icon blue">⬡</span><b>Early<br>Detection</b></div>
-        <div><span class="benefit-icon pink">♥</span><b>Better<br>Treatment</b></div>
-        <div><span class="benefit-icon blue">♟</span><b>Healthier<br>Future</b></div>
-        <p class="trust-script">Tests You Can Trust</p>
-      </aside>
-    </section>
-
-    <section class="features" id="home-collection">
-      <div class="feature"><span class="round-icon pink">♟</span><b>Wide Range<br>of Tests</b></div>
-      <div class="feature"><span class="round-icon purple">♙</span><b>Affordable<br>Packages</b></div>
-      <div class="feature"><span class="round-icon green">⌂</span><b>Home<br>Collection</b></div>
-      <div class="feature"><span class="round-icon orange">✦</span><b>PAN INDIA<br>Service</b></div>
-      <div class="feature"><span class="round-icon cyan">☆</span><b>Trusted<br>by Millions</b></div>
-    </section>
-
-    <section class="packages-section" id="packages">
-      <div class="section-heading">
-        <div><h2><span class="pulse">♡</span> Popular Health Packages</h2><p>Choose from our most popular and comprehensive health packages.</p></div>
-        <a href="#packages">View All Packages →</a>
-      </div>
-      <div class="package-grid" id="packageGrid">
-        <article class="package-card" data-name="full body checkup">
-          <div class="package-art art-body"><span>☀</span></div><h3>Full Body Checkup</h3><p>112 Tests Included</p><div class="package-price"><strong>₹1200</strong><del>₹1800</del><em>33%<small>OFF</small></em></div><button class="book-button" data-package="Full Body Checkup">Book Now →</button>
-        </article>
-        <article class="package-card" data-name="thyroid profile thyroid">
-          <div class="package-art art-thyroid"><span>♧</span></div><h3>Thyroid Profile</h3><p>3 Tests Included</p><div class="package-price"><strong>₹585</strong><del>₹1200</del><em>51%<small>OFF</small></em></div><button class="book-button" data-package="Thyroid Profile">Book Now →</button>
-        </article>
-        <article class="package-card" data-name="diabetes profile diabetes">
-          <div class="package-art art-diabetes"><span>●</span><b>🩸</b></div><h3>Diabetes Profile</h3><p>2 Tests Included</p><div class="package-price"><strong>₹399</strong><del>₹600</del><em>33%<small>OFF</small></em></div><button class="book-button" data-package="Diabetes Profile">Book Now →</button>
-        </article>
-        <article class="package-card" data-name="vitamin d profile vitamin">
-          <div class="package-art art-vitamin"><span>☀</span></div><h3>Vitamin D Profile</h3><p>1 Test Included</p><div class="package-price"><strong>₹1299</strong><del>₹2500</del><em>48%<small>OFF</small></em></div><button class="book-button" data-package="Vitamin D Profile">Book Now →</button>
-        </article>
-        <article class="package-card" data-name="liver function test liver">
-          <div class="package-art art-liver"><span>♥</span></div><h3>Liver Function Test</h3><p>11 Tests Included</p><div class="package-price"><strong>₹799</strong><del>₹1500</del><em>47%<small>OFF</small></em></div><button class="book-button" data-package="Liver Function Test">Book Now →</button>
-        </article>
-        <article class="package-card" data-name="heart profile heart">
-          <div class="package-art art-heart"><span>♥</span></div><h3>Heart Profile</h3><p>12 Tests Included</p><div class="package-price"><strong>₹1199</strong><del>₹2200</del><em>45%<small>OFF</small></em></div><button class="book-button" data-package="Heart Profile">Book Now →</button>
-        </article>
-      </div>
-    </section>
-
-    <section class="bottom-panels" id="why">
-      <div class="why-panel">
-        <h2>Why Choose Tricity Thyrocare Collection Centre?</h2>
-        <div class="why-grid">
-          <div><span>♢</span><b>Trusted<br>Diagnostic Partner</b></div>
-          <div><span>⌂</span><b>Free Home<br>Collection</b></div>
-          <div><span>✦</span><b>PAN India<br>Service Available</b></div>
-          <div><span>▤</span><b>Accurate &amp;<br>Reliable Reports</b></div>
-          <div><span>✿</span><b>India's Most<br>Trusted Brand</b></div>
-        </div>
-      </div>
-      <div class="help-panel" id="contact">
-        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=260&q=80" alt="Healthcare professional">
-        <div><h3>Have a Doctor's Prescription?</h3><p>Get the best price and assistance.</p><a class="whatsapp-button" href="https://wa.me/918178009011?text=Hello%20Tricity%20Thyrocare%2C%20I%20need%20help%20with%20a%20test." target="_blank" rel="noreferrer">◉ Chat on WhatsApp</a></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a class="footer-call" href="tel:8178009011"><span>☎</span><b>Call Now<br><strong>8178009011</strong></b></a>
-    <div class="footer-name">Tricity Thyrocare Collection Centre</div>
-    <div class="footer-tag">Health today. <b>Brighter tomorrow.</b></div>
-  </footer>
-
-  <div class="floating-actions">
-    <a href="https://wa.me/918178009011" aria-label="Chat on WhatsApp" target="_blank" rel="noreferrer">◉</a>
-    <a href="tel:8178009011" aria-label="Call us">☎</a>
-  </div>
-
-  <dialog id="bookingDialog">
-    <form method="dialog" class="dialog-close"><button aria-label="Close">✕</button></form>
-    <h2>Book a Health Package</h2>
-    <p id="chosenPackage">Selected package</p>
-    <form id="bookingForm">
-      <label>Your name<input name="name" required placeholder="Enter your full name"></label>
-      <label>Mobile number<input name="phone" required inputmode="tel" pattern="[0-9+ ()-]{8,16}" placeholder="Enter mobile number"></label>
-      <label>Preferred date<input name="date" type="date" required></label>
-      <label>Preferred time<select name="time" required><option value="">Select a time</option><option>8 AM – 10 AM</option><option>10 AM – 12 PM</option><option>12 PM – 2 PM</option><option>2 PM – 5 PM</option></select></label>
-      <button class="book-button" type="submit">Continue on WhatsApp →</button>
-    </form>
-  </dialog>
-  <script src="script.js"></script>
-</body>
-</html>
+<div class="topline"><span>✦ Trusted Diagnostics</span><span>✓ Accurate Reports</span><a href="tel:8178009011">☎ Call Us 8178009011</a><a href="https://wa.me/918178009011">Chat on WhatsApp ↗</a></div>
+<header class="header">
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  <a class="brand" href="#home"><img src="assets/thyrocare-logo-new.jpg" alt="Thyrocare logo"><span class="brand-name">TRICITY <b>THYROCARE</b><small>COLLECTION CENTRE</small><em>Tests you can trust!</em></span></a>
+  <nav id="nav"><a href="#home">Home</a><a href="#packages">Tests & Packages</a><a href="#about">About Us</a><a href="#collection">Home Collection</a><a href="#contact">Contact</a></nav>
+  <div class="header-actions"><a class="round-call" href="tel:8178009011">☎</a><a class="round-wa" href="https://wa.me/918178009011">☏</a></div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy"><div class="eyebrow">WELCOME TO</div><h1>Tricity <span>Thyrocare</span><br><strong>Collection Centre</strong></h1><h2>Your Health, Our Priority</h2><div class="pink-line"></div><p>Book your health checkup, select a package, choose your convenient date and time, and send your booking details directly on WhatsApp.</p>
+  <form class="search" id="searchForm"><input id="searchInput" placeholder="Search for tests or health packages" aria-label="Search tests and packages"><button>Search →</button></form>
+  <div class="trust-points"><span>✓ Easy booking</span><span>✓ Home collection</span><span>✓ Trusted diagnostics</span></div></div>
+  <div class="hero-visual"><div class="photo-frame"><img src="assets/hero-doctor.jpg" alt="Healthcare professional"></div><div class="floating-note">Because your health<br><b>matters!</b> ♥</div><div class="offer-card"><span class="offer-tag">SPECIAL OFFER</span><h3>Full Body<br>Checkup</h3><p>Complete health screening for a healthier you</p><del>₹1800</del><div class="price">₹1200 <small>33% OFF</small></div><a class="btn" href="#packages">Book Now →</a></div></div>
+</section>
+<section class="benefits" id="collection"><div><i>♟</i><span><b>Wide Range</b><small>of Tests</small></span></div><div><i>♙</i><span><b>Affordable</b><small>Packages</small></span></div><div><i>⌂</i><span><b>Home</b><small>Collection</small></span></div><div><i>✦</i><span><b>PAN INDIA</b><small>Service</small></span></div><div><i>☆</i><span><b>Trusted</b><small>by Millions</small></span></div></section>
+<section class="packages" id="packages"><div class="section-head"><div><h2>♡ Popular Health Packages</h2><p>Choose from our popular and comprehensive health packages.</p></div><a href="#contact">Need help? Contact us →</a></div>
+<div class="package-grid" id="packageGrid">
+<article class="package"><div class="package-art sun">☀</div><h3>Full Body Checkup</h3><p>112 Tests Included</p><div class="package-price">₹1200 <small>33% OFF</small></div><button class="book" data-package="Full Body Checkup — ₹1200">Book Now →</button></article>
+<article class="package"><div class="package-art thyroid">♧</div><h3>Thyroid Profile</h3><p>3 Tests Included</p><div class="package-price">₹585 <small>51% OFF</small></div><button class="book" data-package="Thyroid Profile — ₹585">Book Now →</button></article>
+<article class="package"><div class="package-art diabetes">● 🩸</div><h3>Diabetes Profile</h3><p>2 Tests Included</p><div class="package-price">₹399 <small>33% OFF</small></div><button class="book" data-package="Diabetes Profile — ₹399">Book Now →</button></article>
+<article class="package"><div class="package-art vitamin">☀</div><h3>Vitamin D Profile</h3><p>1 Test Included</p><div class="package-price">₹1299 <small>48% OFF</small></div><button class="book" data-package="Vitamin D Profile — ₹1299">Book Now →</button></article>
+<article class="package"><div class="package-art liver">♥</div><h3>Liver Function Test</h3><p>11 Tests Included</p><div class="package-price">₹799 <small>47% OFF</small></div><button class="book" data-package="Liver Function Test — ₹799">Book Now →</button></article>
+<article class="package"><div class="package-art heart">♥</div><h3>Heart Profile</h3><p>12 Tests Included</p><div class="package-price">₹1199 <small>45% OFF</small></div><button class="book" data-package="Heart Profile — ₹1199">Book Now →</button></article>
+</div><p class="disclaimer">Package contents and prices may vary. Please confirm availability and final pricing before booking.</p></section>
+<section class="lower" id="about"><div class="why"><h2>Why Choose Tricity Thyrocare Collection Centre?</h2><div class="why-grid"><div>♢<small>Trusted<br>Diagnostics</small></div><div>⌂<small>Free Home<br>Collection*</small></div><div>✦<small>PAN India<br>Service</small></div><div>▤<small>Accurate &<br>Reliable Reports</small></div><div>✿<small>Health-first<br>Support</small></div></div></div>
+<div class="help"><div class="help-icon">🩺</div><div><h3>Have a Doctor's Prescription?</h3><p>Get help with test selection and booking.</p><a href="https://wa.me/918178009011?text=Hello%2C%20I%20need%20help%20with%20a%20test%20booking." class="whatsapp">● Chat on WhatsApp</a></div></div></section>
+</main>
+<footer id="contact"><div class="footer-call"><small>CALL NOW</small><a href="tel:8178009011">☎ 8178009011</a></div><div class="footer-name">Tricity Thyrocare Collection Centre</div><div class="tagline">Health today. <b>Brighter tomorrow.</b></div><div class="footer-details"><span>394 Modern Complex, Zirakpur, Punjab</span><a href="mailto:tricitythyrocarecollection@gmail.com">tricitythyrocarecollection@gmail.com</a></div></footer>
+<a class="floating-wa" href="https://wa.me/918178009011" aria-label="Chat on WhatsApp">☏</a>
+<script src="script.js"></script>
+</body></html>
